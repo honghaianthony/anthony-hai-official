@@ -1,9 +1,12 @@
 import MainLayout from "../layouts/MainLayout";
+import Banner from "../components/Banner/Banner";
 
 function Home() {
     return (
         <>
-            <MainLayout></MainLayout>
+            <MainLayout>
+                <Banner />
+            </MainLayout>
         </>
     );
 }
