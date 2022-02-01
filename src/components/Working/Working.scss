@@ -1,0 +1,51 @@
+.what-i-do {
+    height: 500px;
+    .what-i-do-title {
+        font-size: 30px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        font-weight: bold;
+        color: black;
+    }
+    .title-first {
+        text-align: left;
+        font-size: 30px;
+        font-family: Roboto;
+    }
+    .content-first {
+        text-align: left;
+        font-size: 20px;
+        font-family: Roboto;
+    }
+    .blog-image {
+        width: 50%;
+        margin-top: 100px;
+        img {
+            width: 90%;
+        }
+    }
+    .title-second {
+        margin-top: 100px;
+        text-align: left;
+        font-size: 30px;
+        font-family: Roboto;
+        margin-left: 70px;
+    }
+    .content-second {
+        text-align: left;
+        font-size: 20px;
+        font-family: Roboto;
+        margin-left: 70px;
+    }
+    .title-third {
+        margin-top: 100px;
+        text-align: left;
+        font-size: 30px;
+        font-family: Roboto;
+    }
+    .content-third {
+        text-align: left;
+        font-size: 20px;
+        font-family: Roboto;
+    }
+}

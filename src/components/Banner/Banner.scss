@@ -6,12 +6,56 @@
     background-attachment: cover;
     color: #fff;
     height: 550px;
-    .avatar {
-        img {
-            height: 163px;
-            width: 167px;
-            background-size: cover;
-            margin-top: 210px;
+    .banner-info-content {
+        .info-left {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            .avatar {
+                img {
+                    height: 163px;
+                    width: 167px;
+                    background-size: cover;
+                    margin-top: 150px;
+                }
+            }
+        }
+        .info-right {
+            width: 50%;
+            display: flex;
+            .information {
+                margin-left: -200px;
+                margin-top: 150px;
+                .info-name {
+                    font-size: 30px;
+                    text-align: left;
+                }
+                .sub-info-name {
+                    font-size: 15px;
+                    text-align: left;
+                }
+                .intro {
+                    margin-top: 20px;
+                }
+                .title-social-link {
+                    text-align: left;
+                }
+                .social-links {
+                    margin-top: 10px;
+                    margin-left: -10px;
+                    text-align: left;
+                    .social-links-detail {
+                        margin-right: 20px;
+                        .social-link-img {
+                            transition: all 400ms;
+                            &:hover {
+                                transform: scale(1.3);
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
