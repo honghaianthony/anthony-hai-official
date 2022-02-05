@@ -1,0 +1,206 @@
+.footer {
+    width: 100%;
+    .footer-up {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0 50px;
+        background-color: #000000;
+        .footer-wrap-left {
+            display: flex;
+            justify-content: space-between;
+            .footer-link {
+                margin: 50px 100px;
+
+                .footer-link-title {
+                    width: 100%;
+                    text-align: left;
+                    span {
+                        font-size: 25px;
+                        font-family: Roboto;
+                        color: white;
+                    }
+                    .animate-border {
+                        position: relative;
+                        display: block;
+                        width: 130px;
+                        height: 5px;
+                        background: #e6673b;
+                    }
+                }
+                .footer-link-detail {
+                    text-align: left;
+                    li {
+                        list-style-type: none;
+                        text-align: left;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                    }
+                    .footer-link-detail-link {
+                        margin: 15px 0;
+                    }
+                }
+            }
+            .footer-contact {
+                margin: 50px 100px;
+                .footer-contact-title {
+                    width: 100%;
+                    text-align: left;
+
+                    span {
+                        font-size: 25px;
+                        font-family: Roboto;
+                        color: white;
+                    }
+                    .animate-border {
+                        position: relative;
+                        display: block;
+                        width: 130px;
+                        height: 5px;
+                        background: #e6673b;
+                    }
+                }
+                .footer-contact-detail {
+                    text-align: left;
+                    li {
+                        list-style-type: none;
+                        margin: 15px;
+                        text-align: left;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                        margin-left: 15px;
+                    }
+                    .footer-contact-detail-contact {
+                        margin: 15px 0;
+                    }
+                }
+            }
+        }
+
+        .footer-wrap-right {
+            display: flex;
+            justify-content: space-between;
+            .footer-my-interests {
+                margin: 50px 100px;
+                .footer-my-interests-title {
+                    width: 100%;
+                    text-align: left;
+                    span {
+                        font-size: 25px;
+                        font-family: Roboto;
+                        color: white;
+                    }
+                    .animate-border {
+                        position: relative;
+                        display: block;
+                        width: 130px;
+                        height: 5px;
+                        background: #e6673b;
+                    }
+                }
+                .footer-my-interests-detail {
+                    text-align: left;
+                    li {
+                        list-style-type: none;
+                        margin: 15px;
+                        text-align: left;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                        margin-left: 15px;
+                    }
+                    .footer-my-interests-detail-interest {
+                        margin: 15px 0;
+                    }
+                }
+            }
+            .footer-pages {
+                margin: 50px 100px;
+                .footer-pages-title {
+                    width: 100%;
+                    text-align: left;
+                    span {
+                        font-size: 25px;
+                        font-family: Roboto;
+                        color: white;
+                    }
+                    .animate-border {
+                        position: relative;
+                        display: block;
+                        width: 130px;
+                        height: 5px;
+                        background: #e6673b;
+                    }
+                }
+                .footer-pages-detail {
+                    text-align: left;
+                    li {
+                        list-style-type: none;
+                        text-align: left;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                    }
+                    .footer-page-detail-page {
+                        margin: 15px 0;
+                    }
+                }
+            }
+        }
+    }
+    .footer-down {
+        background-color: #2b2b2b;
+        padding: 10px 0;
+        justify-content: center;
+        text-align: center;
+        .content-down-copyright {
+            margin: 10px 0;
+            span {
+                color: #fff;
+                justify-content: center;
+                text-align: center;
+            }
+        }
+        .content-down-allrights {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            p {
+                color: #fff;
+                text-align: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .footer-up {
+        .footer-wrap-left {
+            flex-direction: column;
+        }
+        .footer-wrap-right {
+            flex-direction: column;
+            align-self: flex-start;
+            .footer-pages {
+                padding-top: 120px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .footer-up {
+        flex-direction: column;
+        align-self: center;
+        .footer-pages {
+            padding-top: 0 !important;
+        }
+    }
+}
