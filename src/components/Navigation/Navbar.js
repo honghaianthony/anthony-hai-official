@@ -5,7 +5,7 @@ import "./Navbar.scss";
 
 function Navbar() {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light ">
+        <nav className="navbar navbar-expand-lg navbar-light fixed-top bg-light">
             <div className="container-fluid">
                 <Link className="navbar-brand" to="/">
                     <img src={logo} alt="" className="anthonyhai-logo" />
@@ -27,18 +27,18 @@ function Navbar() {
                             <Link
                                 className="nav-link active"
                                 aria-current="page"
-                                to="#"
+                                to="/"
                             >
                                 Home
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link active" to="#">
+                            <Link className="nav-link active" to="/about">
                                 About
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link active" to="#">
+                            <Link className="nav-link active" to="/project">
                                 Project
                             </Link>
                         </li>

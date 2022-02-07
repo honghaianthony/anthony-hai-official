@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Working.scss";
 import DCE from "../../assets/images/dce.png";
-import blogService from "../../assets/images/blog.png";
+import blogService from "../../assets/images/blog408.png";
 import coding from "../../assets/images/coding.png";
 
 function Working() {
@@ -11,7 +11,7 @@ function Working() {
             <div className="what-i-do-title">What can I do?</div>
             <div className="container">
                 <div className="row">
-                    <div className="col-md-6">
+                    <div className="col-md-6 text-center">
                         <p className="title-first">Software Programming</p>
                         <p className="content-first">
                             I can design, coding a website or making
@@ -25,7 +25,7 @@ function Working() {
                     <div className="col-md-6 text-justify blog-image">
                         <img src={blogService} alt="" />
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-md-6 text-center">
                         <p className="title-second">Writing Blog</p>
                         <p className="content-second">
                             I can write a blog about my knowledge, something
@@ -33,7 +33,7 @@ function Working() {
                             <br /> on the Internet
                         </p>
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-md-6 text-center">
                         <p className="title-third">Doing something I liked</p>
                         <p className="content-third">
                             I like doing something involve to my hobbies such as

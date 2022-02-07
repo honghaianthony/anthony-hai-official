@@ -1,0 +1,67 @@
+.intro-container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    .border-intro {
+        border: 2px solid #000000;
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+        .intro-title {
+            display: block;
+            margin: 25px;
+            border-bottom: 2px solid #000000;
+            h2 {
+                font-size: 30px;
+                text-align: center;
+                position: relative;
+                span {
+                    background-color: white;
+                    position: relative;
+                    top: 10px;
+                    padding: 0 10px;
+                    font-weight: bold;
+                }
+            }
+        }
+        .intro-self {
+            img {
+                margin-bottom: 20px;
+            }
+            p {
+                font-family: Roboto;
+                text-align: left;
+                justify-content: center;
+                margin-top: 20px;
+                font-size: 20px;
+            }
+        }
+        .intro-event {
+            text-align: left;
+            font-size: 20px;
+            p {
+                margin-top: 50px;
+            }
+            img {
+                margin-top: 50px;
+            }
+            .money-plus-img {
+                width: 20%;
+                text-align: center;
+                margin: 0 auto;
+            }
+            .sub-name-project {
+                margin-top: 10px;
+            }
+            .class-image {
+                width: 80%;
+                margin: 0 auto;
+                margin-bottom: 20px;
+            }
+            .dance-img {
+                width: 80%;
+                margin: 0 auto;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

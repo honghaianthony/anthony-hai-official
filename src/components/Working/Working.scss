@@ -16,25 +16,17 @@
         font-size: 20px;
         font-family: Roboto;
     }
-    .blog-image {
-        width: 50%;
-        margin-top: 100px;
-        img {
-            width: 90%;
-        }
-    }
+
     .title-second {
         margin-top: 100px;
         text-align: left;
         font-size: 30px;
         font-family: Roboto;
-        margin-left: 70px;
     }
     .content-second {
         text-align: left;
         font-size: 20px;
         font-family: Roboto;
-        margin-left: 70px;
     }
     .title-third {
         margin-top: 100px;
@@ -46,5 +38,13 @@
         text-align: left;
         font-size: 20px;
         font-family: Roboto;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .blog-image {
+        img {
+            margin-top: 30px;
+        }
     }
 }
