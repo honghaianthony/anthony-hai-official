@@ -1,18 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Intro.scss";
 import Avatar from "../../assets/images/avatar_about.png";
 import Ioe from "../../assets/images/ioe.png";
-import ClassImg from "../../assets/images/class.png";
-import Dance from "../../assets/images/dance.png";
+import ClassImg from "../../assets/images/class2.png";
+import Dance from "../../assets/images/dancehd.jpg";
 import Event from "../../assets/images/event.png";
-import BeachImg from "../../assets/images/beachImg.png";
-import ClassImgSecond from "../../assets/images/classImg.png";
+import BeachImg from "../../assets/images/IMG_534.jpg";
+import ClassImgSecond from "../../assets/images/class2.jpg";
 import DCE from "../../assets/images/dce470.png";
 import ReviewMovie from "../../assets/images/reviewmovie470.png";
 import MoneyPlus from "../../assets/images/moneyplus.png";
+import { useSpring, animated } from "react-spring";
 function Intro() {
+    const props = useSpring({
+        opacity: 1,
+        transform: "translate(3px, 4px)",
+        from: { opacity: 0, transform: "translate(-20px, -20px)" },
+    });
+
     return (
-        <div className="intro">
+        <animated.div className="intro-container" style={props}>
             <div className="border-intro">
                 <div className="intro-title">
                     <h2>
@@ -106,7 +113,11 @@ function Intro() {
                                     https://www.youtube.com/watch?v=z7iYKRVz6AE
                                 </a>
                             </p>
-                            <img src={Dance} alt="Dancing" />
+                            <img
+                                src={Dance}
+                                alt="Dancing"
+                                className="dance-img"
+                            />
                             <div className="col-md-6 text-justify">
                                 <p>
                                     At the end of grade 12, I was honored to be
@@ -124,8 +135,16 @@ function Intro() {
                                 activities together and always remember each
                                 other when talking about it.{" "}
                             </p>
-                            <img src={BeachImg} alt="Beach with my class" />
-                            <img src={ClassImgSecond} alt="My 12th Class" />
+                            <img
+                                src={BeachImg}
+                                alt="Beach with my class"
+                                className="class-image"
+                            />
+                            <img
+                                src={ClassImgSecond}
+                                alt="My 12th Class"
+                                className="class-image"
+                            />
                             <p>
                                 After that, I took the National High School exam
                                 and got into the University of Information
@@ -139,27 +158,32 @@ function Intro() {
                                 things about IT and together with my team over
                                 the semesters have created amazing apps
                             </p>
-                            <div className="col-md-6 text-justify">
+                            <div className="col-md-6 text-center">
                                 <img src={DCE} alt="DCE 2021" />
-                                <p>
+                                <p className="sub-name-project">
                                     Online Programming Course:{" "}
                                     <a href="dce2021.vercel.app">
                                         dce2021.vercel.app
                                     </a>
                                 </p>
                             </div>
-                            <div className="col-md-6 text-justify">
+                            <div className="col-md-6 text-center">
                                 <img src={ReviewMovie} alt="Nghiện Review" />
-                                <p>
+                                <p className="sub-name-project">
                                     Review Movie Web:
                                     <a href="review-movie-uit.herokuapp.com">
                                         review-movie-uit.herokuapp.com
                                     </a>
                                 </p>
                             </div>
-                            <img src={MoneyPlus} alt="Clone Money Plus" />
-                            <p className="text-center">Clone App Money Plus</p>
-                            <br /> <br />
+                            <img
+                                src={MoneyPlus}
+                                alt="Clone Money Plus"
+                                className="money-plus-img"
+                            />
+                            <p className="text-center sub-name-project">
+                                Clone App Money Plus
+                            </p>
                             <p>
                                 I have these projects on Project tab, you can
                                 check it out for more information.
@@ -176,7 +200,7 @@ function Intro() {
                     </div>
                 </div>
             </div>
-        </div>
+        </animated.div>
     );
 }
 

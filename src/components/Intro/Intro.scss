@@ -1,4 +1,4 @@
-.intro {
+.intro-container {
     margin-top: 100px;
     margin-bottom: 100px;
     .border-intro {
@@ -37,6 +37,31 @@
         }
         .intro-event {
             text-align: left;
+            font-size: 20px;
+            p {
+                margin-top: 50px;
+            }
+            img {
+                margin-top: 50px;
+            }
+            .money-plus-img {
+                width: 20%;
+                text-align: center;
+                margin: 0 auto;
+            }
+            .sub-name-project {
+                margin-top: 10px;
+            }
+            .class-image {
+                width: 80%;
+                margin: 0 auto;
+                margin-bottom: 20px;
+            }
+            .dance-img {
+                width: 80%;
+                margin: 0 auto;
+                margin-bottom: 20px;
+            }
         }
     }
 }
