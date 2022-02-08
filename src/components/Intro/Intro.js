@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useLayoutEffect } from "react";
 import "./Intro.scss";
 import Avatar from "../../assets/images/avatar_about.png";
 import Ioe from "../../assets/images/ioe.png";
@@ -14,7 +14,7 @@ import { useSpring, animated } from "react-spring";
 function Intro() {
     const props = useSpring({
         opacity: 1,
-        transform: "translate(3px, 4px)",
+        transform: "translate(0px, 0px)",
         from: { opacity: 0, transform: "translate(-20px, -20px)" },
     });
 
@@ -170,7 +170,7 @@ function Intro() {
                             <div className="col-md-6 text-center">
                                 <img src={ReviewMovie} alt="Nghiện Review" />
                                 <p className="sub-name-project">
-                                    Review Movie Web:
+                                    Review Movie Web:{" "}
                                     <a href="review-movie-uit.herokuapp.com">
                                         review-movie-uit.herokuapp.com
                                     </a>

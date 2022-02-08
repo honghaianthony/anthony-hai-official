@@ -1,18 +1,20 @@
 import React, { useEffect } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import PrivateRoute from "./PrivateRoute";
-import { Home, About, Project } from "../pages";
+import { Home, About, Project, Blog } from "../pages";
+import ScrollToTop from "../helpers/ScrollToTop";
 
 export default function App() {
     return (
-        <BrowserRouter>
-            <div>
+        <Router>
+            <ScrollToTop>
                 <Routes>
-                    <Route path="/" element={<Home />}></Route>
-                    <Route path="/about" element={<About />}></Route>
-                    <Route path="/project" element={<Project />}></Route>
+                    <Route exact path="/" element={<Home />}></Route>
+                    <Route exact path="/about" element={<About />}></Route>
+                    <Route exact path="/project" element={<Project />}></Route>
+                    <Route exact path="/blog" element={<Blog />}></Route>
                 </Routes>
-            </div>
-        </BrowserRouter>
+            </ScrollToTop>
+        </Router>
     );
 }

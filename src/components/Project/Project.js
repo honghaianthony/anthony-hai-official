@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 import "./Project.scss";
 import HTMLImage from "../../assets/images/html40.png";
 import CSSImage from "../../assets/images/css40.png";
@@ -6,6 +6,9 @@ import JSImage from "../../assets/images/js40.png";
 import XamarinImage from "../../assets/images/xamarin40.png";
 import SQLImage from "../../assets/images/sql40.png";
 function Project() {
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0);
+    });
     return (
         <div className="project-container">
             <div className="project-website">

@@ -8,25 +8,25 @@
     height: 550px;
     margin-top: 50px;
     .banner-info-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
         .info-left {
-            width: 50%;
             display: flex;
             justify-content: center;
-            .avatar {
-                img {
-                    height: 163px;
-                    width: 167px;
-                    background-size: cover;
-                    margin-top: 150px;
-                }
+            margin-right: 100px;
+            img {
+                height: 163px;
+                width: 167px;
+                background-size: cover;
+                margin-top: 150px;
             }
         }
         .info-right {
-            width: 50%;
             display: flex;
+            justify-content: center;
+            margin-top: 140px;
             .information {
-                margin-left: -200px;
-                margin-top: 150px;
                 .info-name {
                     font-size: 30px;
                     text-align: left;
@@ -37,6 +37,7 @@
                 }
                 .intro {
                     margin-top: 20px;
+                    text-align: left;
                 }
                 .title-social-link {
                     text-align: left;
@@ -57,6 +58,19 @@
                     }
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .info-left {
+        margin-left: 50px;
+    }
+    .info-right {
+        margin-left: 0px;
+        margin-right: 40px;
+        .sub-info-name {
+            text-align: left;
         }
     }
 }
