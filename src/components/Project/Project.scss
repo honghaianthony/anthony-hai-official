@@ -89,3 +89,9 @@
         }
     }
 }
+
+@media screen and (max-width: 800px) {
+    .project-website-first {
+        flex-direction: row;
+    }
+}

@@ -33,13 +33,13 @@ function Footer() {
                                 <Link to="/">Home</Link>
                             </div>
                             <div className="footer-link-detail-link">
-                                <Link to="/">About</Link>
+                                <Link to="/about">About</Link>
                             </div>
                             <div className="footer-link-detail-link">
-                                <Link to="/">Project</Link>
+                                <Link to="/project">Project</Link>
                             </div>
                             <div className="footer-link-detail-link">
-                                <Link to="/">Blog</Link>
+                                <Link to="/blog">Blog</Link>
                             </div>
                             <div className="footer-link-detail-link">
                                 <Link to="/">Connection</Link>
