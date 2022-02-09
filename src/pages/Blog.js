@@ -1,11 +1,11 @@
 import React from "react";
 import MainLayout from "../layouts/MainLayout";
-import FeaturingBlog from "../components/Blog/FeaturingBlog/FeaturingBlog";
+import BlogMain from "../components/Blog/Blog";
 function Blog() {
     return (
         <>
             <MainLayout>
-                <FeaturingBlog />
+                <BlogMain />
             </MainLayout>
         </>
     );

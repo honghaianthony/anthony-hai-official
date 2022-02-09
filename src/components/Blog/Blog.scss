@@ -1,0 +1,19 @@
+.blog-container {
+    padding: 20px;
+    .featuring-blog-item {
+        position: relative;
+        z-index: 1;
+    }
+    .featuring-blog .blog-item-wrap {
+        position: relative;
+        z-index: 1;
+        width: 40%;
+        margin: 20px;
+    }
+    .featuring-blog .blog-item-img {
+        width: 100%;
+        object-fit: cover;
+        height: 500px;
+        border-radius: 5px;
+    }
+}
