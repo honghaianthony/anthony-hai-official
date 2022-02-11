@@ -6,7 +6,7 @@ function FeaturingBlog(props) {
     return (
         <>
             <div className="blog-item">
-                <Link className="blog-item-link" to="#">
+                <Link className="blog-item-link" to="/blog/blog-detail">
                     <figure
                         className="blog-item-wrap"
                         data-category={props.label}
