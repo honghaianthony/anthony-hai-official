@@ -1,7 +1,14 @@
 import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import PrivateRoute from "./PrivateRoute";
-import { Home, About, Project, Blog, BlogDetail } from "../pages";
+import {
+    Home,
+    About,
+    Project,
+    Blog,
+    BlogDetail,
+    ProjectDetail,
+} from "../pages";
 import ScrollToTop from "../helpers/ScrollToTop";
 
 export default function App() {
@@ -17,6 +24,11 @@ export default function App() {
                         exact
                         path="/blog/blog-detail"
                         element={<BlogDetail />}
+                    ></Route>
+                    <Route
+                        exact
+                        path="/project/website-project"
+                        element={<ProjectDetail />}
                     ></Route>
                 </Routes>
             </ScrollToTop>
