@@ -1,4 +1,5 @@
 import React, { useLayoutEffect } from "react";
+import { Link } from "react-router-dom";
 import "./Project.scss";
 import HTMLImage from "../../assets/images/html40.png";
 import CSSImage from "../../assets/images/css40.png";
@@ -37,13 +38,13 @@ function Project() {
                             </div>
                         </div>
                         <div className="project-website-see-details">
-                            <a
+                            <Link
                                 class="btn btn-primary btn-see-details"
-                                href="#"
+                                to="/project/website-project"
                                 role="button"
                             >
                                 See details
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

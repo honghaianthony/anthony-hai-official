@@ -41,9 +41,7 @@ function Footer() {
                             <div className="footer-link-detail-link">
                                 <Link to="/blog">Blog</Link>
                             </div>
-                            <div className="footer-link-detail-link">
-                                <Link to="/">Connection</Link>
-                            </div>
+                           
                         </div>
                     </div>
                     <div className="footer-contact">

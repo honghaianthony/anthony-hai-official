@@ -47,11 +47,6 @@ function Navbar() {
                                 Blog
                             </Link>
                         </li>
-                        <li className="nav-item">
-                            <Link className="nav-link active" to="#">
-                                Connection
-                            </Link>
-                        </li>
                     </ul>
                 </div>
             </div>
