@@ -1,0 +1,40 @@
+.blog-detail-container {
+    margin-top: 150px;
+    margin-bottom: 100px;
+    .blog-detail-title {
+        text-align: left;
+        margin-left: 150px;
+        h4 {
+            font-weight: bold;
+        }
+        .animate-border {
+            position: relative;
+            display: block;
+            width: 130px;
+            height: 3px;
+            background: #e6673b;
+        }
+    }
+    .blog-detail-author {
+        text-align: left;
+        display: flex;
+        margin-left: 150px;
+        align-items: center;
+        margin-bottom: 50px;
+        .blog-detail-author-left {
+            margin-top: 20px;
+        }
+        .blog-detail-author-right {
+            margin-left: 10px;
+            .blog-detail-author-name {
+                margin-top: 20px;
+            }
+            .blog-detail-author-name-link {
+                margin-top: -10px;
+                .author-name-link {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
