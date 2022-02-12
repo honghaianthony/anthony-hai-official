@@ -1,39 +1,39 @@
 import React from "react";
-import "./WebsiteProject.scss";
+import "./MobileProject.scss";
 import { Link } from "react-router-dom";
 import DCE from "../../../assets/images/dce.png";
 import GitlabIcon from "../../../assets/images/gitlabicon.png";
 function WebsiteProject(props) {
     return (
-        <div className="website-project-container">
-            <div className="website-project-title-container">
-                <div className="website-project-title">
-                    <h4>Website Project</h4>
+        <div className="mobile-project-container">
+            <div className="mobile-project-title-container">
+                <div className="mobile-project-title">
+                    <h4>Mobile Project</h4>
                 </div>
             </div>
-            <div className="website-project-all-container">
-                <div className="website-project-item">
+            <div className="mobile-project-all-container">
+                <div className="mobile-project-item">
                     <Link
-                        className="website-project-item-link"
-                        to="/website-project/website-project-detail"
+                        className="mobile-project-item-link"
+                        to="/mobile-project/mobile-project-detail"
                     >
                         <figure
-                            className="website-project-item-wrap"
+                            className="mobile-project-item-wrap"
                             data-category={props.label}
                         >
                             <img
-                                className="website-project-item-img"
+                                className="mobile-project-item-img"
                                 alt={props.title}
                                 src={DCE}
                             />
                         </figure>
-                        <div className="website-project-item-content">
+                        <div className="mobile-project-item-content">
                             <div
-                                className="website-project-item-info"
+                                className="mobile-project-item-info"
                                 data-category={props.info}
                             >
                                 <div className="title-container">
-                                    <h5 className="website-project-item-title">
+                                    <h5 className="mobile-project-item-title">
                                         Title
                                     </h5>
 
@@ -45,16 +45,16 @@ function WebsiteProject(props) {
                                     </div>
                                 </div>
 
-                                <p className="website-project-item-description">
+                                <p className="mobile-project-item-description">
                                     ContentContentContent
                                 </p>
                             </div>
 
-                            <div className="website-project-item-author">
-                                <div className="website-project-text-left">
-                                    <div className="website-project-author-name-container">
+                            <div className="mobile-project-item-author">
+                                <div className="mobile-project-text-left">
+                                    <div className="mobile-project-author-name-container">
                                         <span>Author:</span>
-                                        <span className="website-project-author-name">
+                                        <span className="mobile-project-author-name">
                                             <Link
                                                 to="/"
                                                 className="author-link-info"
@@ -64,9 +64,9 @@ function WebsiteProject(props) {
                                         </span>
                                     </div>
 
-                                    <div className="website-project-time-container">
-                                        <i className="website-project-time-icon"></i>
-                                        <span className="website-project-time">
+                                    <div className="mobile-project-time-container">
+                                        <i className="mobile-project-time-icon"></i>
+                                        <span className="mobile-project-time">
                                             10/02/2022
                                         </span>
                                     </div>

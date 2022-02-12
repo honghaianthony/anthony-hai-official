@@ -74,7 +74,7 @@ function Project() {
                         <div className="project-mobile-see-details">
                             <a
                                 class="btn btn-primary btn-see-details"
-                                href="#"
+                                href="/project/mobile-project"
                                 role="button"
                             >
                                 See details
