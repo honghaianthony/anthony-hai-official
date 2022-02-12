@@ -7,7 +7,8 @@ import {
     Project,
     Blog,
     BlogDetail,
-    ProjectDetail,
+    WebsiteProject,
+    MobileProject,
 } from "../pages";
 import ScrollToTop from "../helpers/ScrollToTop";
 
@@ -28,7 +29,12 @@ export default function App() {
                     <Route
                         exact
                         path="/project/website-project"
-                        element={<ProjectDetail />}
+                        element={<WebsiteProject />}
+                    ></Route>
+                    <Route
+                        exact
+                        path="/project/mobile-project"
+                        element={<MobileProject />}
                     ></Route>
                 </Routes>
             </ScrollToTop>
