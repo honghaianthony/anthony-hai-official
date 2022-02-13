@@ -72,13 +72,13 @@ function Project() {
                             </div>
                         </div>
                         <div className="project-mobile-see-details">
-                            <a
+                            <Link
                                 class="btn btn-primary btn-see-details"
-                                href="/project/mobile-project"
+                                to="/project/mobile-project"
                                 role="button"
                             >
                                 See details
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
