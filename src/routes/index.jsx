@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "../assets/scss/AdminAppearance.scss";
 import PrivateRoute from "./PrivateRoute";
 import {
@@ -15,40 +15,46 @@ import {
     ProjectAdmin,
 } from "../pages";
 import ScrollToTop from "../helpers/ScrollToTop";
+import Sidebar from "../components/Sidebar/Sidebar";
+
+import { AdminRoute } from "./AdminRoute";
 
 export default function App() {
     return (
-        <Router>
-            <ScrollToTop>
-                <Routes>
-                    <Route exact path="/" element={<Home />}></Route>
-                    <Route exact path="/about" element={<About />}></Route>
-                    <Route exact path="/project" element={<Project />}></Route>
-                    <Route exact path="/blog" element={<Blog />}></Route>
-                    <Route
-                        exact
-                        path="/blog/blog-detail"
-                        element={<BlogDetail />}
-                    ></Route>
-                    <Route
-                        exact
-                        path="/project/website-project"
-                        element={<WebsiteProject />}
-                    ></Route>
-                    <Route
-                        exact
-                        path="/project/mobile-project"
-                        element={<MobileProject />}
-                    ></Route>
-                    <Route exact path="/admin" element={<Dashboard />} />
-                    <Route exact path="/blog-admin" element={<BlogAdmin />} />
-                    <Route
-                        exact
-                        path="/project-admin"
-                        element={<ProjectAdmin />}
-                    />
-                </Routes>
-            </ScrollToTop>
-        </Router>
+        <BrowserRouter>
+            <Switch>
+                <Route exact path="/" component={Home}></Route>
+                <Route exact path="/about" component={About}></Route>
+                <Route exact path="/project" component={Project}></Route>
+                <Route exact path="/blog" component={Blog}></Route>
+                <Route
+                    exact
+                    path="/blog/blog-detail"
+                    component={BlogDetail}
+                ></Route>
+                <Route
+                    exact
+                    path="/project/website-project"
+                    component={WebsiteProject}
+                ></Route>
+                <Route
+                    exact
+                    path="/project/mobile-project"
+                    component={MobileProject}
+                ></Route>
+                <Route
+                    render={(props) => (
+                        <div className="layout">
+                            <Sidebar {...props} />
+                            <div className="layout-content">
+                                <div className="layout-content-main">
+                                    <AdminRoute />
+                                </div>
+                            </div>
+                        </div>
+                    )}
+                />
+            </Switch>
+        </BrowserRouter>
     );
 }

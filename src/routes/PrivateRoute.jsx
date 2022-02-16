@@ -1,4 +1,4 @@
-import { Route, Navigate, useLocation } from "react-router-dom";
+import { Route, Redirect, useLocation } from "react-router-dom";
 import { useStore } from "../store/UseStore";
 
 function PrivateRoute({ children, ...rest }) {
@@ -9,7 +9,7 @@ function PrivateRoute({ children, ...rest }) {
             {state.isAuthenticated ? (
                 children
             ) : (
-                <Navigate
+                <Redirect
                     to={{
                         pathname: "/login",
                         state: { from: location },
