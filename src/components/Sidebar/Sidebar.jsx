@@ -18,23 +18,24 @@ const SidebarItem = (props) => {
     );
 };
 
-const Sidebar = () => {
+const Sidebar = (props) => {
+    const activeItem = sidebar_items.findIndex(
+        (item) => item.route === props.location.pathname
+    );
     return (
         <div className="sidebar">
             <div className="sidebar-logo">
                 <img src={Logo} alt="HongHai Official" />
             </div>
-            <div className="sidebar-container">
-                <Link to="/admin">
-                    <div>Dashboard</div>
+            {sidebar_items.map((item, index) => (
+                <Link to={item.route} key={index}>
+                    <SidebarItem
+                        title={item.display_name}
+                        icon={item.icon}
+                        active={index === activeItem}
+                    />
                 </Link>
-                <Link to="/blog-admin">
-                    <div>Blog admin</div>
-                </Link>
-                <Link to="/project-admin">
-                    <div>Project Admin</div>
-                </Link>
-            </div>
+            ))}
         </div>
     );
 };

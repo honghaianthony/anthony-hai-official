@@ -1,11 +1,7 @@
 import React from "react";
 import AdminLayout from "../layouts/AdminLayout";
 function Blog() {
-    return (
-        <>
-            <AdminLayout>test2</AdminLayout>
-        </>
-    );
+    return <div>Blog Admin</div>;
 }
 
 export default Blog;
