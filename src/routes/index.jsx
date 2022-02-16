@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "../assets/scss/AdminAppearance.scss";
 import PrivateRoute from "./PrivateRoute";
 import {
     Home,
@@ -9,6 +10,9 @@ import {
     BlogDetail,
     WebsiteProject,
     MobileProject,
+    Dashboard,
+    BlogAdmin,
+    ProjectAdmin,
 } from "../pages";
 import ScrollToTop from "../helpers/ScrollToTop";
 
@@ -36,6 +40,13 @@ export default function App() {
                         path="/project/mobile-project"
                         element={<MobileProject />}
                     ></Route>
+                    <Route exact path="/admin" element={<Dashboard />} />
+                    <Route exact path="/blog-admin" element={<BlogAdmin />} />
+                    <Route
+                        exact
+                        path="/project-admin"
+                        element={<ProjectAdmin />}
+                    />
                 </Routes>
             </ScrollToTop>
         </Router>

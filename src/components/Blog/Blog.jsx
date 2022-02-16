@@ -1,6 +1,6 @@
 import React from "react";
 import "./Blog.scss";
-import FeaturingBlog from "../Blog/FeaturingBlog/FeaturingBlog";
+import FeaturingBlog from "./FeaturingBlog/FeaturingBlog";
 
 function Blog() {
     return (
