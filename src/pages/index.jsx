@@ -5,3 +5,6 @@ export { default as Blog } from "./Blog";
 export { default as BlogDetail } from "./BlogDetail";
 export { default as WebsiteProject } from "./WebsiteProject";
 export { default as MobileProject } from "./MobileProject";
+export { default as Dashboard } from "./Dashboard";
+export { default as BlogAdmin } from "./BlogAdmin";
+export { default as ProjectAdmin } from "./ProjectAdmin";

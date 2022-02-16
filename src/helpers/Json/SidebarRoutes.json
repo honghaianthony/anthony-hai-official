@@ -1,0 +1,17 @@
+[
+    {
+        "display_name": "Dashboard",
+        "route": "/admin",
+        "icon": "bx bx-category-alt"
+    },
+    {
+        "display_name": "Blog Management",
+        "route": "/blog-admin",
+        "icon": "bx bxl-blogger"
+    },
+    {
+        "display_name": "Project Management",
+        "route": "/project-admin",
+        "icon": "bx bx-package"
+    }
+]
