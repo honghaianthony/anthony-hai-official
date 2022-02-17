@@ -19,6 +19,7 @@ export const AdminRoute = () => {
         <Switch>
             <Route path="/admin" exact component={Dashboard} />
             <Route path="/blog-admin" component={BlogAdmin} />
+            <Route path="/project-admin" component={ProjectAdmin} />
         </Switch>
     );
 };
