@@ -16,6 +16,7 @@ import {
 } from "../pages";
 import ScrollToTop from "../helpers/ScrollToTop";
 import Sidebar from "../components/Sidebar/Sidebar";
+import AdminTopNav from "../components/AdminTopNav/AdminTopNav";
 
 import { AdminRoute } from "./AdminRoute";
 
@@ -47,6 +48,7 @@ export default function App() {
                         <div className="layout">
                             <Sidebar {...props} />
                             <div className="layout-content">
+                                <AdminTopNav />
                                 <div className="layout-content-main">
                                     <AdminRoute />
                                 </div>

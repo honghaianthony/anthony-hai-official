@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Logo from "../../assets/images/logo.png";
 
 import sidebar_items from "../../helpers/Json/SidebarRoutes.json";
+import "./Sidebar.scss";
 
 const SidebarItem = (props) => {
     const active = props.active ? "active" : "";
