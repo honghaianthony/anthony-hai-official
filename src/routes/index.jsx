@@ -18,8 +18,6 @@ import ScrollToTop from "../helpers/ScrollToTop";
 import Sidebar from "../components/Sidebar/Sidebar";
 import AdminTopNav from "../components/AdminTopNav/AdminTopNav";
 
-import { AdminRoute } from "./AdminRoute";
-
 export default function App() {
     return (
         <BrowserRouter>
@@ -43,19 +41,13 @@ export default function App() {
                     path="/project/mobile-project"
                     component={MobileProject}
                 ></Route>
+                <Route exact path="/admin" component={Dashboard}></Route>
                 <Route
-                    render={(props) => (
-                        <div className="layout">
-                            <Sidebar {...props} />
-                            <div className="layout-content">
-                                <AdminTopNav />
-                                <div className="layout-content-main">
-                                    <AdminRoute />
-                                </div>
-                            </div>
-                        </div>
-                    )}
-                />
+                    exact
+                    path="/project-admin"
+                    component={ProjectAdmin}
+                ></Route>
+                <Route exact path="/blog-admin" component={BlogAdmin}></Route>
             </Switch>
         </BrowserRouter>
     );
