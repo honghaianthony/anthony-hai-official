@@ -1,7 +1,14 @@
 import React from "react";
-
-function Blog() {
-    return <h4 className="page-header">Blog Management</h4>;
+import AdminLayout from "../layouts/AdminLayout";
+import BlogAdminPage from "../components/BlogAdmin/BlogAdmin";
+function BlogAdmin() {
+    return (
+        <>
+            <AdminLayout>
+                <BlogAdminPage />
+            </AdminLayout>
+        </>
+    );
 }
 
-export default Blog;
+export default BlogAdmin;

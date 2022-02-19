@@ -1,7 +1,14 @@
 import React from "react";
-
+import AdminLayout from "../layouts/AdminLayout";
+import ProjectAdminPage from "../components/ProjectAdmin/ProjectAdmin";
 function ProjectAdmin() {
-    return <h4 className="page-header">Project Management</h4>;
+    return (
+        <>
+            <AdminLayout>
+                <ProjectAdminPage />
+            </AdminLayout>
+        </>
+    );
 }
 
 export default ProjectAdmin;

@@ -1,7 +1,15 @@
 import React from "react";
+import AdminLayout from "../layouts/AdminLayout";
+import DashboardPage from "../components/Dashboard/Dashboard";
 
 function Dashboard() {
-    return <h4 className="page-header">Dashboard</h4>;
+    return (
+        <>
+            <AdminLayout>
+                <DashboardPage />
+            </AdminLayout>
+        </>
+    );
 }
 
 export default Dashboard;
