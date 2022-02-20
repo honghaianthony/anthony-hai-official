@@ -13,6 +13,8 @@ import {
     Dashboard,
     BlogAdmin,
     ProjectAdmin,
+    NotFound,
+    Login,
 } from "../pages";
 import ScrollToTop from "../helpers/ScrollToTop";
 import Sidebar from "../components/Sidebar/Sidebar";
@@ -48,6 +50,7 @@ export default function App() {
                     component={ProjectAdmin}
                 ></Route>
                 <Route exact path="/blog-admin" component={BlogAdmin}></Route>
+                <Route exact path="/login" component={Login}></Route>
             </Switch>
         </BrowserRouter>
     );

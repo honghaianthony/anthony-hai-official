@@ -9,4 +9,4 @@ export { default as Dashboard } from "./Dashboard";
 export { default as BlogAdmin } from "./BlogAdmin";
 export { default as ProjectAdmin } from "./ProjectAdmin";
 export { default as Login } from "./Login";
-export { default as NotFoundPage } from "./NotFound";
+export { default as NotFound } from "./NotFound";
