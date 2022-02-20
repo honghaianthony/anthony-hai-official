@@ -41,7 +41,6 @@ function Footer() {
                             <div className="footer-link-detail-link">
                                 <Link to="/blog">Blog</Link>
                             </div>
-                           
                         </div>
                     </div>
                     <div className="footer-contact">
@@ -60,7 +59,7 @@ function Footer() {
                                     icon={faEnvelope}
                                     color="#fff"
                                 />
-                                <a href="mail.google.com">
+                                <a href="http://mail.google.com">
                                     namsaoquan@gmail.com
                                 </a>
                             </div>
@@ -69,7 +68,7 @@ function Footer() {
                                     icon={faFacebook}
                                     color="#fff"
                                 />
-                                <a href="facebook.com/dangngohonghai">
+                                <a href="http://facebook.com/dangngohonghai">
                                     Dang Ngo Hong Hai
                                 </a>
                             </div>
@@ -78,7 +77,7 @@ function Footer() {
                                     icon={faInstagram}
                                     color="#fff"
                                 />
-                                <a href="instagram.com/anthony.haidang">
+                                <a href="http://instagram.com/anthony.haidang">
                                     anthony.haidang
                                 </a>
                             </div>
@@ -87,7 +86,7 @@ function Footer() {
                                     icon={faMapMarkerAlt}
                                     color="#fff"
                                 />
-                                <a href="maps.google.com">
+                                <a href="http://maps.google.com">
                                     Octorber 23<sup>rd</sup> Street, Nha Trang
                                     City,
                                     <br />

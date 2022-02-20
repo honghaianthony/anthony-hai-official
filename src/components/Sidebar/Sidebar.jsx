@@ -27,9 +27,9 @@ function Sidebar() {
 
     return (
         <div className="sidebar">
-            <div className="sidebar-logo">
-                <img src={Logo} alt="HongHai Official" />
-            </div>
+            <Link className="sidebar-logo" to="/">
+                <img src={Logo} alt="" className="anthonyhai-logo" />
+            </Link>
 
             <div className="sidebar-item">
                 <NavLink
