@@ -4,12 +4,15 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "./assets/boxicons-2.0.7/css/boxicons.min.css";
+import AuthProvider from "./store/Provider";
 
 document.title = "Hong Hai Official";
 
 ReactDOM.render(
     <React.StrictMode>
-        <App />
+        <AuthProvider>
+            <App />
+        </AuthProvider>
     </React.StrictMode>,
     document.getElementById("root")
 );

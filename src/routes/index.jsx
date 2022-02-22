@@ -19,8 +19,13 @@ import {
 import ScrollToTop from "../helpers/ScrollToTop";
 import Sidebar from "../components/Sidebar/Sidebar";
 import AdminTopNav from "../components/AdminTopNav/AdminTopNav";
+import { useStore, actions } from "../store";
 
 export default function App() {
+    const [state, dispatch] = useStore();
+    useEffect(() => {
+        dispatch(actions.reload());
+    }, []);
     return (
         <BrowserRouter>
             <Switch>
@@ -43,13 +48,21 @@ export default function App() {
                     path="/project/mobile-project"
                     component={MobileProject}
                 ></Route>
-                <Route exact path="/admin" component={Dashboard}></Route>
-                <Route
+                <PrivateRoute
+                    exact
+                    path="/admin"
+                    component={Dashboard}
+                ></PrivateRoute>
+                <PrivateRoute
                     exact
                     path="/project-admin"
                     component={ProjectAdmin}
-                ></Route>
-                <Route exact path="/blog-admin" component={BlogAdmin}></Route>
+                ></PrivateRoute>
+                <PrivateRoute
+                    exact
+                    path="/blog-admin"
+                    component={BlogAdmin}
+                ></PrivateRoute>
                 <Route exact path="/login" component={Login}></Route>
             </Switch>
         </BrowserRouter>

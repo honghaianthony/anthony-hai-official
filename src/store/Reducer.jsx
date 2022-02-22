@@ -11,33 +11,34 @@ const initState = {
 
 function Reducer(state, action) {
     switch (action.type) {
-        case LOGIN:
-            localStorage.setItem("token", action.payload);
-            const info = jwtDecode(action.payload);
-            return {
-                isAuthenticated: true,
-                userId: info.userId,
-                username: info.username,
-                role: info.role,
-                fullname: info.fullname,
-            };
-        case LOGOUT:
-            localStorage.removeItem("token");
-            return initState;
         case RELOAD:
             const token = localStorage.getItem("token");
             if (token) {
                 const infoReload = jwtDecode(token);
                 return {
                     isAuthenticated: true,
-                    userId: infoReload.userId,
-                    username: infoReload.username,
-                    role: infoReload.role,
+                    userId: infoReload.id,
+                    username: infoReload.userName,
+                    role: infoReload.roleId,
                     fullname: infoReload.fullname,
                 };
             } else {
                 return initState;
             }
+        case LOGIN:
+            localStorage.setItem("token", action.payload);
+            const info = jwtDecode(action.payload);
+            return {
+                isAuthenticated: true,
+                userId: info.id,
+                username: info.userName,
+                role: info.roleId,
+                fullname: info.fullname,
+            };
+        case LOGOUT:
+            localStorage.removeItem("token");
+            return initState;
+
         default:
             throw new Error("Invalid action");
     }
