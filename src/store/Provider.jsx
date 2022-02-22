@@ -1,9 +1,10 @@
 import { useReducer } from "react";
 import Context from "./Context";
-import Reducer, { initState } from "./Reducer";
+import reducer, { initState } from "./reducer";
 
 function Provider({ children }) {
-    const [state, dispatch] = useReducer(Reducer, initState);
+    const [state, dispatch] = useReducer(reducer, initState);
+
     return (
         <Context.Provider value={[state, dispatch]}>
             {children}

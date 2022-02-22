@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import "./AdminProfile.scss";
-
+import { useStore, actions } from "../../store";
 const clickOutsideRef = (content_ref, toggle_ref) => {
     document.addEventListener("mousedown", (e) => {
         // user click toggle
@@ -19,6 +19,11 @@ const clickOutsideRef = (content_ref, toggle_ref) => {
 };
 
 const AdminProfile = (props) => {
+    const [state, dispatch] = useStore();
+    const handleLogOut = () => {
+        dispatch(actions.logout());
+    };
+
     const dropdown_toggle_el = useRef(null);
     const dropdown_content_el = useRef(null);
     clickOutsideRef(dropdown_content_el, dropdown_toggle_el);
@@ -34,7 +39,11 @@ const AdminProfile = (props) => {
                 )}
                 {props.customToggle ? props.customToggle() : ""}
             </button>
-            <div ref={dropdown_content_el} className="dropdown-content">
+            <div
+                ref={dropdown_content_el}
+                className="dropdown-content"
+                onClick={handleLogOut}
+            >
                 {props.contentData && props.renderItems
                     ? props.contentData.map((item, index) =>
                           props.renderItems(item, index)
