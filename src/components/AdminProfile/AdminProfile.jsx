@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "./AdminProfile.scss";
 import { useStore, actions } from "../../store";
 const clickOutsideRef = (content_ref, toggle_ref) => {
@@ -19,6 +19,8 @@ const clickOutsideRef = (content_ref, toggle_ref) => {
 };
 
 const AdminProfile = (props) => {
+    const [clickedIndex, setClickedIndex] = useState({});
+
     const [state, dispatch] = useStore();
     const handleLogOut = () => {
         dispatch(actions.logout());

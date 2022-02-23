@@ -1,0 +1,12 @@
+.table-appearance {
+    padding: 30px;
+    margin-bottom: 20px;
+    background-color: var(--main-bg);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    .blog-table-header {
+        font-weight: bold !important;
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+}
