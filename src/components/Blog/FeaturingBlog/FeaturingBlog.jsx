@@ -14,7 +14,7 @@ function FeaturingBlog(props) {
                         <img
                             className="blog-item-img"
                             alt={props.title}
-                            src={DCE}
+                            src={props.src}
                         />
                     </figure>
                     <div className="blog-item-content">
@@ -22,10 +22,10 @@ function FeaturingBlog(props) {
                             className="blog-item-info"
                             data-category={props.info}
                         >
-                            <h5 className="blog-item-title">Title</h5>
+                            <h5 className="blog-item-title">{props.title}</h5>
 
                             <p className="blog-item-description">
-                                ContentContentContent
+                                {props.description}
                             </p>
                         </div>
                         <div className="blog-item-author">
@@ -37,7 +37,7 @@ function FeaturingBlog(props) {
                                             to="/"
                                             className="author-link-info"
                                         >
-                                            Dang Ngo Hong Hai
+                                            {props.author}
                                         </Link>
                                     </span>
                                 </div>
@@ -45,7 +45,7 @@ function FeaturingBlog(props) {
                                 <div className="blog-time-container">
                                     <i className="blog-time-icon"></i>
                                     <span className="blog-time">
-                                        10/02/2022
+                                        {props.time}
                                     </span>
                                 </div>
                             </div>
