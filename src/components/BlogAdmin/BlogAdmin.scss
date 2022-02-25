@@ -1,0 +1,16 @@
+.add-blog-cover-image {
+    margin-bottom: 20px;
+}
+
+#add-blog-cover-image {
+    width: 99%;
+    text-align: left;
+    padding: 5px 0 10px 0px;
+    border-radius: 5px;
+    border-color: #898989;
+}
+
+#add-blog-cover-image::placeholder {
+    font-size: 16px;
+    margin: 10px;
+}
