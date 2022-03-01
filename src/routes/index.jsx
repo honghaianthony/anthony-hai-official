@@ -20,6 +20,8 @@ import ScrollToTop from "../helpers/ScrollToTop";
 import Sidebar from "../components/Sidebar/Sidebar";
 import AdminTopNav from "../components/AdminTopNav/AdminTopNav";
 import { useStore, actions } from "../store";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function App() {
     const [state, dispatch] = useStore();
@@ -65,6 +67,17 @@ export default function App() {
                 ></PrivateRoute>
                 <Route exact path="/login" component={Login}></Route>
             </Switch>
+            <ToastContainer
+                position="bottom-right"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+            />
         </BrowserRouter>
     );
 }
