@@ -52,14 +52,20 @@ function Blog() {
                                     blogs[firstItem].updatedAt
                                 ).toLocaleDateString()}
                                 //view='134'
-                                path={`/blogs/${blogs[firstItem].id}`}
+                                path={`/blog/${blogs[firstItem].id}`}
                             />
                         </div>
                     </div>
-                    <div className="another-blog">
-                        <h4 className="another-blog-title">Another Blogs</h4>
-                        <div className="another-blog-item">{anotherBlog()}</div>
-                    </div>
+                    {blogs.length > 1 && (
+                        <div className="another-blog">
+                            <h4 className="another-blog-title">
+                                Another Blogs
+                            </h4>
+                            <div className="another-blog-item">
+                                {anotherBlog()}
+                            </div>
+                        </div>
+                    )}
                 </div>
             ) : (
                 <div className="loader"></div>

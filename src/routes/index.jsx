@@ -37,7 +37,7 @@ export default function App() {
                 <Route exact path="/blog" component={Blog}></Route>
                 <Route
                     exact
-                    path="/blog/blog-detail"
+                    path={`/blog/:blogId`}
                     component={BlogDetail}
                 ></Route>
                 <Route

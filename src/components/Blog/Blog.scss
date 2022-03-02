@@ -1,5 +1,6 @@
 .blog-container {
-    padding: 20px;
+    display: block;
+    padding: 10px 100px;
     .blog-item-link {
         display: flex;
         flex-flow: row;
@@ -16,32 +17,33 @@
         margin-top: 30px;
         .blog-item-info {
             padding: 20px 10px 30px;
-        }
-        .blog-item-title {
-            color: #252e48;
-            font-size: 18px;
-            margin: 10px 0;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            display: -webkit-box;
-            -webkit-line-clamp: 1;
-            -webkit-box-orient: vertical;
-            &:hover {
-                color: #050295;
+            .blog-item-title {
+                color: #252e48;
+                font-size: 18px;
+                margin: 10px 0;
+                overflow: hidden !important;
+                text-overflow: ellipsis !important;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                &:hover {
+                    color: #050295;
+                }
+            }
+            .blog-item-description {
+                margin-bottom: 20px;
+                font-size: 14px;
+                color: #42526e;
+                line-height: 1.5;
+                white-space: normal;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
             }
         }
-        .blog-item-description {
-            margin-bottom: 20px;
-            font-size: 14px;
-            color: #42526e;
-            line-height: 1.5;
-            white-space: normal;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-        }
+
         .blog-item-author {
             width: calc(100% - 30px);
             padding: 10px 0;
@@ -227,6 +229,7 @@
         margin: 0 auto;
         font-size: 16px;
         line-height: 22px;
+
         .another-blog-item {
             margin-bottom: 0px;
             padding-inline-start: 0px;
@@ -240,11 +243,14 @@
                     display: flex;
                     flex-flow: column;
                     height: 95%;
+                    width: 420px;
                     .blog-item-wrap {
                         position: relative;
                         width: 100%;
                         padding-top: 73%;
                         overflow: hidden;
+                        width: 420px;
+                        height: 307px;
                         margin: 0;
                         .blog-item-img {
                             position: absolute;
@@ -253,9 +259,9 @@
                             bottom: 0;
                             left: 0;
                             display: block;
-                            width: 100%;
+                            width: 420px;
                             max-width: 100%;
-                            height: 100%;
+                            height: 307px;
                             max-height: 100%;
                             object-fit: cover;
                             border-radius: 5px;
