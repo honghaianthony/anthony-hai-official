@@ -20,7 +20,7 @@
         display: flex;
         margin-left: 150px;
         align-items: center;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
         .blog-detail-author-left {
             margin-top: 20px;
         }
@@ -36,5 +36,8 @@
                 }
             }
         }
+    }
+    .blog-detail-content {
+        margin: 0 150px;
     }
 }

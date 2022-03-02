@@ -5,10 +5,20 @@ const getAllBlogs = async () => {
 };
 
 const getBlogById = async (id) => {
-    return await axios.getBlogById(`blog/get-blog-by-id?id=${id}`);
+    return await axios.get(`blog/get-blog-by-id?id=${id}`);
+};
+
+const addNewBlog = async (data) => {
+    return await axios.post("blog/add-new-blog", data);
+};
+
+const uploads = async () => {
+    return await axios.post("blog/uploads");
 };
 
 export default {
     getAllBlogs,
     getBlogById,
+    addNewBlog,
+    uploads,
 };
