@@ -21,15 +21,16 @@ function Blog() {
 
     const anotherBlog = () => {
         return filteredData.map((item, index) => {
-            let path = "/blog/" + item.id;
+            // let path = "/blog/" + item.id;
             return (
                 <FeaturingBlog
                     key={index}
+                    blogId={item.id}
                     src={item.coverImage}
                     title={item.title}
                     author={`${item.User.firstName} ${item.User.lastName}`}
                     time={new Date(item.updatedAt).toLocaleDateString()}
-                    path={path}
+                    // path={path}
                     description={item.description}
                 />
             );

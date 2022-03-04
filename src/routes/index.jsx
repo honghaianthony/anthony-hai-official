@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch, useParams } from "react-router-dom";
 import "../assets/scss/AdminAppearance.scss";
 import PrivateRoute from "./PrivateRoute";
 import {
@@ -25,6 +25,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 export default function App() {
     const [state, dispatch] = useStore();
+
     useEffect(() => {
         dispatch(actions.reload());
     }, []);
@@ -37,7 +38,7 @@ export default function App() {
                 <Route exact path="/blog" component={Blog}></Route>
                 <Route
                     exact
-                    path={`/blog/:blogId`}
+                    path="/blog/:slug.:id.html"
                     component={BlogDetail}
                 ></Route>
                 <Route
