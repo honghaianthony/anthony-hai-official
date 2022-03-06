@@ -162,16 +162,14 @@ function Intro() {
                                 <img src={DCE} alt="DCE 2021" />
                                 <p className="sub-name-project">
                                     Online Programming Course:{" "}
-                                    <a href="dce2021.vercel.app">
-                                        dce2021.vercel.app
-                                    </a>
+                                    <a href="https://dce2021.ml">dce2021.ml</a>
                                 </p>
                             </div>
                             <div className="col-md-6 text-center">
                                 <img src={ReviewMovie} alt="Nghiện Review" />
                                 <p className="sub-name-project">
                                     Review Movie Web:{" "}
-                                    <a href="review-movie-uit.herokuapp.com">
+                                    <a href="https://review-movie-uit.herokuapp.com">
                                         review-movie-uit.herokuapp.com
                                     </a>
                                 </p>

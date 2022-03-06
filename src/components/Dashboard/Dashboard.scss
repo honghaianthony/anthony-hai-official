@@ -9,4 +9,28 @@
         font-size: 25px;
         margin-bottom: 20px;
     }
+    .view-btn {
+        font-size: 15px;
+        background-color: #4bc455;
+        color: white;
+        white-space: nowrap;
+        overflow: hidden;
+        padding: 8px 20px;
+        transition: all 0.3s ease-out;
+        border: none;
+        outline: none;
+        border-radius: 15px;
+    }
+    .view-btn-delete {
+        font-size: 15px;
+        background-color: #e93d12;
+        color: white;
+        white-space: nowrap;
+        overflow: hidden;
+        padding: 8px 20px;
+        transition: all 0.3s ease-out;
+        border: none;
+        outline: none;
+        border-radius: 15px;
+    }
 }

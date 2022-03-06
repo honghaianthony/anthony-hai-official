@@ -4,15 +4,22 @@ import "./BlogDetail.scss";
 import AvatarRound from "../../../assets/images/ava.png";
 import blogApis from "../../../apis/blogApis";
 import { useStore } from "../../../store";
-function BlogDetail() {
+function BlogDetail(props) {
     const [data, setData] = useState(null);
-    const { blogId } = useParams();
+    const [fullData, setFullData] = useState(null);
+    const { id } = useParams();
     const [state, dispatch] = useStore();
 
     useEffect(async () => {
-        const res = await blogApis.getBlogById(blogId);
+        const res = await blogApis.getBlogById(id);
         setData(res);
     }, []);
+
+    useEffect(async () => {
+        const res = await blogApis.getAllBlogs();
+        setFullData(res);
+    }, []);
+
     return (
         <div className="blog-detail-container">
             {data ? (

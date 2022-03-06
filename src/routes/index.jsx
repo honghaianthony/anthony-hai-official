@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch, useParams } from "react-router-dom";
 import "../assets/scss/AdminAppearance.scss";
 import PrivateRoute from "./PrivateRoute";
 import {
@@ -15,6 +15,7 @@ import {
     ProjectAdmin,
     NotFound,
     Login,
+    UpdateBlog,
 } from "../pages";
 import ScrollToTop from "../helpers/ScrollToTop";
 import Sidebar from "../components/Sidebar/Sidebar";
@@ -25,6 +26,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 export default function App() {
     const [state, dispatch] = useStore();
+
     useEffect(() => {
         dispatch(actions.reload());
     }, []);
@@ -37,7 +39,7 @@ export default function App() {
                 <Route exact path="/blog" component={Blog}></Route>
                 <Route
                     exact
-                    path={`/blog/:blogId`}
+                    path="/blog/:slug.:id.html"
                     component={BlogDetail}
                 ></Route>
                 <Route
@@ -64,6 +66,11 @@ export default function App() {
                     exact
                     path="/blog-admin"
                     component={BlogAdmin}
+                ></PrivateRoute>
+                <PrivateRoute
+                    exact
+                    path="/blog-admin/update/:blogId"
+                    component={UpdateBlog}
                 ></PrivateRoute>
                 <Route exact path="/login" component={Login}></Route>
             </Switch>
