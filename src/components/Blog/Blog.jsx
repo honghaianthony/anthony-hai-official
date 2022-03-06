@@ -6,37 +6,37 @@ import blogApis from "../../apis/blogApis";
 function Blog() {
     const [blogs, setBlogs] = useState([]);
     const [data, setData] = useState([]);
-    const [filteredData, setFilteredData] = useState(blogs);
     useEffect(async () => {
         const res = await blogApis.getAllBlogs();
         setBlogs(res);
     }, []);
 
-    useEffect(() => {
-        setFilteredData(blogs);
-    }, [blogs]);
-
     let firstItem = 0;
-    let trendBlogs = [1, 2, 3];
+
+    const idArray = blogs.map((item, index) => {
+        return index;
+    });
+
+    idArray.splice(0, 1);
 
     const anotherBlog = () => {
-        return filteredData.map((item, index) => {
+        return idArray.map((item, index) => {
             // let path = "/blog/" + item.id;
             return (
                 <FeaturingBlog
-                    key={index}
-                    blogId={item.id}
-                    src={item.coverImage}
-                    title={item.title}
-                    author={`${item.User.firstName} ${item.User.lastName}`}
-                    time={new Date(item.updatedAt).toLocaleDateString()}
+                    key={blogs[item].id}
+                    blogId={blogs[item].id}
+                    src={blogs[item].coverImage}
+                    title={blogs[item].title}
+                    author={`${blogs[item].User.firstName} ${blogs[item].User.lastName}`}
+                    time={new Date(blogs[item].updatedAt).toLocaleDateString()}
                     // path={path}
-                    description={item.description}
+                    description={blogs[item].description}
                 />
             );
         });
     };
-
+    console.log(idArray);
     return (
         <div className="blog-container">
             {blogs.length > 0 ? (
@@ -45,6 +45,7 @@ function Blog() {
                         <h4 className="featuring-blog-title">Featuring Blog</h4>
                         <div className="featuring-blog-item">
                             <FeaturingBlog
+                                blogId={blogs[firstItem].id}
                                 src={blogs[firstItem].coverImage}
                                 title={blogs[firstItem].title}
                                 description={blogs[firstItem].description}
@@ -53,7 +54,6 @@ function Blog() {
                                     blogs[firstItem].updatedAt
                                 ).toLocaleDateString()}
                                 //view='134'
-                                path={`/blog/${blogs[firstItem].id}`}
                             />
                         </div>
                     </div>

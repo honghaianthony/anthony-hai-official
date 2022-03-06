@@ -15,6 +15,7 @@ import {
     ProjectAdmin,
     NotFound,
     Login,
+    UpdateBlog,
 } from "../pages";
 import ScrollToTop from "../helpers/ScrollToTop";
 import Sidebar from "../components/Sidebar/Sidebar";
@@ -65,6 +66,11 @@ export default function App() {
                     exact
                     path="/blog-admin"
                     component={BlogAdmin}
+                ></PrivateRoute>
+                <PrivateRoute
+                    exact
+                    path="/blog-admin/update/:blogId"
+                    component={UpdateBlog}
                 ></PrivateRoute>
                 <Route exact path="/login" component={Login}></Route>
             </Switch>
