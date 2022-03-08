@@ -176,6 +176,10 @@
                             -webkit-box-orient: vertical;
                         }
                     }
+                    .content-container {
+                        display: flex;
+                        justify-content: space-between;
+                    }
 
                     .mobile-project-item-description {
                         margin-bottom: 40px;

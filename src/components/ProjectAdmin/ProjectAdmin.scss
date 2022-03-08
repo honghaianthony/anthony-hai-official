@@ -1,0 +1,47 @@
+.project-admin-container {
+    text-align: left;
+    .project-admin-title {
+        font-weight: bold;
+        color: #000;
+    }
+    .project-admin-content {
+        display: flex;
+        margin: 50px 0;
+        position: space-between;
+        .add-project-cover-image {
+            margin-top: 30px;
+            .preview-image {
+                width: 512px;
+            }
+        }
+    }
+    .add-project-button {
+        display: flex;
+        justify-content: flex-end;
+        button {
+            border: none;
+            outline: none;
+            width: 175px;
+            height: 40px;
+            border-radius: 11px;
+            background-color: #f21e44;
+            color: #fff;
+            font-weight: 400;
+        }
+        margin-top: 200px;
+    }
+}
+
+.add-project-cover-image {
+    margin-bottom: 20px;
+    #add-project-cover-image {
+        width: 99%;
+        text-align: left;
+        padding: 5px 0 10px 0px;
+
+        &::placeholder {
+            font-size: 16px;
+            margin: 10px;
+        }
+    }
+}
