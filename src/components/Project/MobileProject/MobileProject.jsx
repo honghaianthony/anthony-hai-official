@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from "react";
 import "./MobileProject.scss";
 import { Link } from "react-router-dom";
-import DCE from "../../../assets/images/dce.png";
-import GitlabIcon from "../../../assets/images/gitlabicon.png";
 import projectApis from "../../../apis/projectApis";
 function MobileProject(props) {
     const [data, setData] = useState([]);
     const typeProject = "Mobile";
-    useEffect(async () => {
-        const res = await projectApis.getProjectByType(typeProject);
-        setData(res);
+    useEffect(() => {
+        async function asyncProject() {
+            const res = await projectApis.getProjectByType(typeProject);
+            setData(res);
+        }
+        asyncProject();
     }, []);
     return (
         <div className="mobile-project-container">
@@ -26,6 +27,8 @@ function MobileProject(props) {
                                 <a
                                     className="mobile-project-item-link"
                                     href={item.linkProject}
+                                    target="_blank"
+                                    rel="noreferrer"
                                 >
                                     <figure
                                         className="mobile-project-item-wrap"

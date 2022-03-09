@@ -5,9 +5,12 @@ import projectApis from "../../../apis/projectApis";
 function WebsiteProject() {
     const [data, setData] = useState([]);
     const typeProject = "Website";
-    useEffect(async () => {
-        const res = await projectApis.getProjectByType(typeProject);
-        setData(res);
+    useEffect(() => {
+        async function asyncProject() {
+            const res = await projectApis.getProjectByType(typeProject);
+            setData(res);
+        }
+        asyncProject();
     }, []);
     return (
         <div className="website-project-container">
@@ -24,6 +27,8 @@ function WebsiteProject() {
                                 <a
                                     className="website-project-item-link"
                                     href={item.linkProject}
+                                    target="_blank"
+                                    rel="noreferrer"
                                 >
                                     <figure
                                         className="website-project-item-wrap"

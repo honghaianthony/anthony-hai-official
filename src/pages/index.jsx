@@ -11,3 +11,4 @@ export { default as ProjectAdmin } from "./ProjectAdmin";
 export { default as Login } from "./Login";
 export { default as NotFound } from "./NotFound";
 export { default as UpdateBlog } from "./UpdateBlog";
+export { default as UpdateProject } from "./UpdateProject";

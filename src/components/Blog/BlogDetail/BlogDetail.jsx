@@ -3,22 +3,18 @@ import { Link, useParams } from "react-router-dom";
 import "./BlogDetail.scss";
 import AvatarRound from "../../../assets/images/ava.png";
 import blogApis from "../../../apis/blogApis";
-import { useStore } from "../../../store";
+
 function BlogDetail(props) {
     const [data, setData] = useState(null);
-    const [fullData, setFullData] = useState(null);
     const { id } = useParams();
-    const [state, dispatch] = useStore();
 
-    useEffect(async () => {
-        const res = await blogApis.getBlogById(id);
-        setData(res);
-    }, []);
-
-    useEffect(async () => {
-        const res = await blogApis.getAllBlogs();
-        setFullData(res);
-    }, []);
+    useEffect(() => {
+        async function asyncProject() {
+            const res = await blogApis.getBlogById(id);
+            setData(res);
+        }
+        asyncProject();
+    }, [id]);
 
     return (
         <div className="blog-detail-container">

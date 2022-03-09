@@ -18,6 +18,10 @@ function Intro() {
         from: { opacity: 0, transform: "translate(-20px, -20px)" },
     });
 
+    const myStyle = {
+        wordBreak: "break-all",
+    };
+
     return (
         <animated.div className="intro-container" style={props}>
             <div className="border-intro">
@@ -104,12 +108,18 @@ function Intro() {
                                 month to give the best performance of our
                                 student life.
                                 <br /> <br /> The link of this dance:
-                                <a href="https://www.facebook.com/100022060086787/videos/364070247671642">
+                                <a
+                                    href="https://www.facebook.com/100022060086787/videos/364070247671642"
+                                    style={myStyle}
+                                >
                                     https://www.facebook.com/100022060086787/videos/364070247671642
                                 </a>
                                 <br />
                                 Or my Youtube Channel:
-                                <a href="  https://www.youtube.com/watch?v=z7iYKRVz6AE">
+                                <a
+                                    href="https://www.youtube.com/watch?v=z7iYKRVz6AE"
+                                    style={myStyle}
+                                >
                                     https://www.youtube.com/watch?v=z7iYKRVz6AE
                                 </a>
                             </p>

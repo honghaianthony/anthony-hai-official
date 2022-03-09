@@ -5,10 +5,12 @@ import blogApis from "../../apis/blogApis";
 
 function Blog() {
     const [blogs, setBlogs] = useState([]);
-    const [data, setData] = useState([]);
-    useEffect(async () => {
-        const res = await blogApis.getAllBlogs();
-        setBlogs(res);
+    useEffect(() => {
+        async function asyncProject() {
+            const res = await blogApis.getAllBlogs();
+            setBlogs(res);
+        }
+        asyncProject();
     }, []);
 
     let firstItem = 0;

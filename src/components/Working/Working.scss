@@ -17,15 +17,12 @@
         font-size: 20px;
         font-family: Roboto;
     }
-
     .title-second {
-        margin-top: 100px;
-        text-align: left;
+        margin-top: 15px;
         font-size: 30px;
         font-family: Roboto;
     }
     .content-second {
-        text-align: left;
         font-size: 20px;
         font-family: Roboto;
     }
@@ -42,10 +39,26 @@
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 992px) {
+    .title-second {
+        margin-left: 70px !important;
+    }
+    .content-second {
+        margin-left: 70px !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .blog-content {
+        text-align: left !important;
+    }
     .blog-image {
-        img {
-            margin-top: 30px;
-        }
+        margin-top: 100px !important;
+    }
+    .title-second {
+        margin-left: 0px !important;
+    }
+    .content-second {
+        margin-left: 0px !important;
     }
 }

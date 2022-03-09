@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./Banner.scss";
 import avatar from "../../assets/images/avatar-round.png";
 import fbIcon from "../../assets/images/fb-icon.png";
@@ -10,6 +9,10 @@ import twiIcon from "../../assets/images/twi-icon.png";
 import youtubeIcon from "../../assets/images/youtube-icon.png";
 
 function Banner() {
+    function sendMail(event) {
+        event.preventDefault();
+        window.open("mailto:namsaoquan@gmail.com", "my-window");
+    }
     return (
         <div className="banner-info">
             <div className="banner-info-content">
@@ -20,7 +23,8 @@ function Banner() {
                     <div className="information">
                         <div className="info-name">Dang Ngo Hong Hai</div>
                         <div className="sub-info-name">
-                            become IT Student at 18, now 21
+                            become IT Student at 18, now{" "}
+                            {new Date().getFullYear() - 2001}
                         </div>
                         <div className="intro">
                             Hello, my name is Hai, you can call me Anthony. Do
@@ -69,7 +73,7 @@ function Banner() {
                                 />
                             </a>
                             <a
-                                onClick="javascript:window.open('mailto:namsaoquan@gmail.com', 'my-window');event.preventDefault()"
+                                onClick={(event) => sendMail(event)}
                                 href="mailto:namsaoquan@gmail.com"
                                 className="social-links-detail"
                             >
