@@ -74,3 +74,18 @@
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    .banner-info-content {
+        flex-direction: column !important;
+        .info-left {
+            img {
+                margin-top: 50px !important;
+            }
+        }
+        .info-right {
+            margin-top: 20px !important;
+            margin: 0 auto !important;
+        }
+    }
+}

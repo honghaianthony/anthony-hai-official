@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import blogApis from "../../../apis/blogApis";
 import { toast } from "react-toastify";
 import { CKEditor } from "@ckeditor/ckeditor5-react";
@@ -11,7 +11,6 @@ function UpdateBlog() {
     const [blogName, setBlogName] = useState();
     const [blogDescription, setBlogDescription] = useState();
     const [blogContent, setBlogContent] = useState();
-    const [dataInput, setDataInput] = useState({ title: "", description: "" });
     const [progress, setProgress] = useState(0);
     const [image, setImage] = useState(null);
     const [url, setUrl] = useState("");
@@ -51,19 +50,28 @@ function UpdateBlog() {
         }
     };
 
-    useEffect(async () => {
-        const res = await blogApis.getBlogById(blogId);
-        setBlogName(res.title);
+    useEffect(() => {
+        async function asyncProject() {
+            const res = await blogApis.getBlogById(blogId);
+            setBlogName(res.title);
+        }
+        asyncProject();
     }, [blogId]);
 
-    useEffect(async () => {
-        const res = await blogApis.getBlogById(blogId);
-        setBlogDescription(res.description);
+    useEffect(() => {
+        async function asyncProject() {
+            const res = await blogApis.getBlogById(blogId);
+            setBlogDescription(res.description);
+        }
+        asyncProject();
     }, [blogId]);
 
-    useEffect(async () => {
-        const res = await blogApis.getBlogById(blogId);
-        setBlogContent(res.content);
+    useEffect(() => {
+        async function asyncProject() {
+            const res = await blogApis.getBlogById(blogId);
+            setBlogContent(res.content);
+        }
+        asyncProject();
     }, [blogId]);
 
     const handleSaveBlog = async (e) => {

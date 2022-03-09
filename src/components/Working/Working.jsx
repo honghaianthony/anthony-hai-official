@@ -20,12 +20,12 @@ function Working() {
                         </p>
                     </div>
                     <div className="col-md-6 text-justify">
-                        <img src={DCE} alt="" />
+                        <img src={DCE} alt="DCE" />
                     </div>
-                    <div className="col-md-6 text-justify blog-image">
-                        <img src={blogService} alt="" />
+                    <div className="col-md-6 blog-image">
+                        <img src={blogService} alt="Blog writer" />
                     </div>
-                    <div className="col-md-6 text-center">
+                    <div className="col-md-6 blog-content">
                         <p className="title-second">Writing Blog</p>
                         <p className="content-second">
                             I can write a blog about my knowledge, something
@@ -42,7 +42,7 @@ function Working() {
                         </p>
                     </div>
                     <div className="col-md-6 text-justify">
-                        <img src={coding} alt="" />
+                        <img src={coding} alt="Coding" />
                     </div>
                 </div>
             </div>

@@ -1,4 +1,4 @@
-import React, { useLayoutEffect } from "react";
+import React, { useLayoutEffect, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Project.scss";
 import HTMLImage from "../../assets/images/html40.png";
@@ -6,10 +6,31 @@ import CSSImage from "../../assets/images/css40.png";
 import JSImage from "../../assets/images/js40.png";
 import XamarinImage from "../../assets/images/xamarin40.png";
 import SQLImage from "../../assets/images/sql40.png";
+import projectApis from "../../apis/projectApis";
 function Project() {
     useLayoutEffect(() => {
         window.scrollTo(0, 0);
     });
+    const [projectData, setProjectData] = useState([]);
+    const [mobileData, setMobileData] = useState([]);
+    const projectTypeWebsite = "Website";
+    const projectTypeMobile = "Mobile";
+    useEffect(() => {
+        async function asyncProject() {
+            const res = await projectApis.getProjectByType(projectTypeWebsite);
+            setProjectData(res);
+        }
+        asyncProject();
+    }, []);
+    useEffect(() => {
+        async function asyncProject() {
+            const res = await projectApis.getProjectByType(projectTypeMobile);
+            setMobileData(res);
+        }
+        asyncProject();
+    }, []);
+    var projectCount = Object.keys(projectData).length;
+    var mobileCount = Object.keys(mobileData).length;
     return (
         <div className="project-container">
             <div className="project-website">
@@ -20,7 +41,7 @@ function Project() {
                                 <h2>Website Project</h2>
                             </div>
                             <div className="project-website-amount">
-                                <h4>2 Projects</h4>
+                                <h4>{projectCount} Projects</h4>
                             </div>
                         </div>
 
@@ -57,7 +78,7 @@ function Project() {
                                 <h2>Mobile Project</h2>
                             </div>
                             <div className="project-mobile-amount">
-                                <h4>1 Project</h4>
+                                <h4>{mobileCount} Project</h4>
                             </div>
                         </div>
 
