@@ -1,11 +1,6 @@
 import React, { useLayoutEffect, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Project.scss";
-import HTMLImage from "../../assets/images/html40.png";
-import CSSImage from "../../assets/images/css40.png";
-import JSImage from "../../assets/images/js40.png";
-import XamarinImage from "../../assets/images/xamarin40.png";
-import SQLImage from "../../assets/images/sql40.png";
 import projectApis from "../../apis/projectApis";
 function Project() {
     useLayoutEffect(() => {
@@ -48,13 +43,22 @@ function Project() {
                         <div className="project-website-icon">
                             <div className="project-website-icon-row">
                                 <div className="project-website-icon-column">
-                                    <img src={HTMLImage} alt="HTML" />
+                                    <img
+                                        src={`https://firebasestorage.googleapis.com/v0/b/anthonyhai.appspot.com/o/html40.png?alt=media&token=144dddce-093a-4b75-81df-5fe2136a5d16`}
+                                        alt="HTML"
+                                    />
                                 </div>
                                 <div className="project-website-icon-column">
-                                    <img src={CSSImage} alt="CSS" />
+                                    <img
+                                        src={`https://firebasestorage.googleapis.com/v0/b/anthonyhai.appspot.com/o/css40.png?alt=media&token=2ca63405-c5cf-4972-a479-433955f73bcb`}
+                                        alt="CSS"
+                                    />
                                 </div>
                                 <div className="project-website-icon-column">
-                                    <img src={JSImage} alt="JS" />
+                                    <img
+                                        src={`https://firebasestorage.googleapis.com/v0/b/anthonyhai.appspot.com/o/js40.png?alt=media&token=fa89ea72-24d0-4b11-a9e4-ad7cd7a97051`}
+                                        alt="JS"
+                                    />
                                 </div>
                             </div>
                         </div>
@@ -85,10 +89,16 @@ function Project() {
                         <div className="project-mobile-icon">
                             <div className="project-mobile-icon-row">
                                 <div className="project-mobile-icon-column">
-                                    <img src={XamarinImage} alt="Xamarin" />
+                                    <img
+                                        src={`https://firebasestorage.googleapis.com/v0/b/anthonyhai.appspot.com/o/xamarin40.png?alt=media&token=f829e4f6-8238-426b-9edd-240519cb0aa2`}
+                                        alt="Xamarin"
+                                    />
                                 </div>
                                 <div className="project-mobile-icon-column">
-                                    <img src={SQLImage} alt="SQL" />
+                                    <img
+                                        src={`https://firebasestorage.googleapis.com/v0/b/anthonyhai.appspot.com/o/sql40.png?alt=media&token=f395dbff-4cf8-44df-a121-03b583991921`}
+                                        alt="SQL"
+                                    />
                                 </div>
                             </div>
                         </div>

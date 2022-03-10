@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import logo from "../../assets/images/logo.png";
+import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.scss";
 
@@ -8,7 +7,11 @@ function Navbar() {
         <nav className="navbar navbar-expand-lg navbar-light fixed-top bg-light">
             <div className="container-fluid">
                 <Link className="navbar-brand" to="/">
-                    <img src={logo} alt="" className="anthonyhai-logo" />
+                    <img
+                        src="https://firebasestorage.googleapis.com/v0/b/anthonyhai.appspot.com/o/logo.png?alt=media&token=f0a3264b-50ec-42c3-bea6-df69e673fed4"
+                        alt="logo"
+                        className="anthonyhai-logo"
+                    />
                 </Link>
                 <button
                     className="navbar-toggler"

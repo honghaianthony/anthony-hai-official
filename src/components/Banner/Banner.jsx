@@ -1,12 +1,5 @@
 import React from "react";
 import "./Banner.scss";
-import avatar from "../../assets/images/avatar-round.png";
-import fbIcon from "../../assets/images/fb-icon.png";
-import gitIcon from "../../assets/images/git-icon.png";
-import insIcon from "../../assets/images/ins-icon.png";
-import mailIcon from "../../assets/images/mail-icon.png";
-import twiIcon from "../../assets/images/twi-icon.png";
-import youtubeIcon from "../../assets/images/youtube-icon.png";
 
 function Banner() {
     function sendMail(event) {
@@ -17,7 +10,10 @@ function Banner() {
         <div className="banner-info">
             <div className="banner-info-content">
                 <div className="info-left">
-                    <img src={avatar} alt="" />
+                    <img
+                        src={`https://firebasestorage.googleapis.com/v0/b/anthonyhai.appspot.com/o/avatar-round.png?alt=media&token=a9754b01-488c-4c23-881c-4b47fb7cec5e`}
+                        alt=""
+                    />
                 </div>
                 <div className="info-right">
                     <div className="information">
@@ -37,7 +33,7 @@ function Banner() {
                                 className="social-links-detail"
                             >
                                 <img
-                                    src={fbIcon}
+                                    src={`https://firebasestorage.googleapis.com/v0/b/anthonyhai.appspot.com/o/fb-icon.png?alt=media&token=0142f5b6-4f66-4439-a911-20eeaff4e0e8`}
                                     alt="Facebook"
                                     className="social-link-img"
                                 />
@@ -47,7 +43,7 @@ function Banner() {
                                 className="social-links-detail"
                             >
                                 <img
-                                    src={insIcon}
+                                    src={`https://firebasestorage.googleapis.com/v0/b/anthonyhai.appspot.com/o/ins-icon.png?alt=media&token=1e74ddac-e314-4415-80cb-9037d21893ce`}
                                     alt="Instagram"
                                     className="social-link-img"
                                 />
@@ -57,7 +53,7 @@ function Banner() {
                                 className="social-links-detail"
                             >
                                 <img
-                                    src={twiIcon}
+                                    src={`https://firebasestorage.googleapis.com/v0/b/anthonyhai.appspot.com/o/twi-icon.png?alt=media&token=c12e4ea2-0878-451a-9fdc-cb3d645c0347`}
                                     alt="Twitter"
                                     className="social-link-img"
                                 />
@@ -67,7 +63,7 @@ function Banner() {
                                 className="social-links-detail"
                             >
                                 <img
-                                    src={gitIcon}
+                                    src={`https://firebasestorage.googleapis.com/v0/b/anthonyhai.appspot.com/o/git-icon.png?alt=media&token=e6af22bf-b6ab-4c38-a8c8-74e5bca7d9f8`}
                                     alt="Github"
                                     className="social-link-img"
                                 />
@@ -78,7 +74,7 @@ function Banner() {
                                 className="social-links-detail"
                             >
                                 <img
-                                    src={mailIcon}
+                                    src={`https://firebasestorage.googleapis.com/v0/b/anthonyhai.appspot.com/o/mail-icon.png?alt=media&token=a0c40b2f-55f9-4c86-ac76-0be3e6041d70`}
                                     alt="Gmail"
                                     className="social-link-img"
                                 />
@@ -88,7 +84,7 @@ function Banner() {
                                 className="social-links-detail"
                             >
                                 <img
-                                    src={youtubeIcon}
+                                    src={`https://firebasestorage.googleapis.com/v0/b/anthonyhai.appspot.com/o/youtube-icon.png?alt=media&token=e97e2e3c-49d4-489f-b04d-00234d11e2c0`}
                                     alt="Youtube"
                                     className="social-link-img"
                                 />

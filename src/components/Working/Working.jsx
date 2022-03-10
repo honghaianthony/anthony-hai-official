@@ -1,9 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./Working.scss";
-import DCE from "../../assets/images/dce.png";
-import blogService from "../../assets/images/blog408.png";
-import coding from "../../assets/images/coding.png";
 
 function Working() {
     return (
@@ -20,10 +16,18 @@ function Working() {
                         </p>
                     </div>
                     <div className="col-md-6 text-justify">
-                        <img src={DCE} alt="DCE" />
+                        <img
+                            src={`https://firebasestorage.googleapis.com/v0/b/anthonyhai.appspot.com/o/dce.png?alt=media&token=21d87ff9-49e8-474b-8f32-57a7013dc4aa`}
+                            alt="DCE"
+                            width="70%"
+                        />
                     </div>
                     <div className="col-md-6 blog-image">
-                        <img src={blogService} alt="Blog writer" />
+                        <img
+                            src={`https://firebasestorage.googleapis.com/v0/b/anthonyhai.appspot.com/o/blog408.png?alt=media&token=28a961df-a4f6-4347-a264-12ca35c8f848`}
+                            alt="Blog writer"
+                            width="70%"
+                        />
                     </div>
                     <div className="col-md-6 blog-content">
                         <p className="title-second">Writing Blog</p>
@@ -42,7 +46,11 @@ function Working() {
                         </p>
                     </div>
                     <div className="col-md-6 text-justify">
-                        <img src={coding} alt="Coding" />
+                        <img
+                            src={`https://firebasestorage.googleapis.com/v0/b/anthonyhai.appspot.com/o/coding.png?alt=media&token=9f8ab285-e5fc-4747-a3e0-e919f3d22390`}
+                            alt="Coding"
+                            width="70%"
+                        />
                     </div>
                 </div>
             </div>

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import "./BlogDetail.scss";
-import AvatarRound from "../../../assets/images/ava.png";
 import blogApis from "../../../apis/blogApis";
 
 function BlogDetail(props) {
@@ -26,7 +25,10 @@ function BlogDetail(props) {
                     </div>
                     <div className="blog-detail-author">
                         <div className="blog-detail-author-left">
-                            <img src={AvatarRound} alt="Avatar" />
+                            <img
+                                src={`https://firebasestorage.googleapis.com/v0/b/anthonyhai.appspot.com/o/ava.png?alt=media&token=e0158b8e-bf2f-4072-a68e-bf78439a35dc`}
+                                alt="Avatar"
+                            />
                         </div>
                         <div className="blog-detail-author-right row">
                             <div className="blog-detail-author-name">
