@@ -1,9 +1,14 @@
 import React from "react";
 import AnotherLayout from "../layouts/AnotherLayout";
 import Login from "../components/Authentication/Login";
+import { Helmet } from "react-helmet";
 function LoginPage() {
     return (
         <>
+            <Helmet>
+                <title>Login</title>
+                <meta name="description" content="Login" />
+            </Helmet>
             <AnotherLayout>
                 <Login />
             </AnotherLayout>
