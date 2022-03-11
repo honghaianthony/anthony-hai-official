@@ -1,12 +1,15 @@
 import React from "react";
 import AdminLayout from "../layouts/AdminLayout";
 import DashboardPage from "../components/Dashboard/Dashboard";
-
-import { Redirect } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 function Dashboard() {
     return (
         <>
+            <Helmet>
+                <title>Dashboard</title>
+                <meta name="description" content="Dashboard" />
+            </Helmet>
             <AdminLayout>
                 <DashboardPage />
             </AdminLayout>

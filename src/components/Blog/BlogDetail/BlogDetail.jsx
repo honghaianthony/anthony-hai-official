@@ -2,8 +2,9 @@ import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import "./BlogDetail.scss";
 import blogApis from "../../../apis/blogApis";
+import { Helmet } from "react-helmet";
 
-function BlogDetail(props) {
+function BlogDetail() {
     const [data, setData] = useState(null);
     const { id } = useParams();
 
@@ -20,6 +21,13 @@ function BlogDetail(props) {
             {data ? (
                 <div className="blog-detail">
                     <div className="blog-detail-title">
+                        <Helmet>
+                            <title>{data.title}</title>
+                            <meta
+                                name="description"
+                                content={data.description}
+                            />
+                        </Helmet>
                         <h4>{data.title}</h4>
                         <span class="animate-border mt-2 mb-6"></span>
                     </div>
