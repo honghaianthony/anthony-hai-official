@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
-import logo from "../../assets/images/logo.png";
-import { Link } from "react-router-dom";
+import React from "react";
+import { Link, NavLink } from "react-router-dom";
 import "./Navbar.scss";
 
 function Navbar() {
@@ -8,7 +7,13 @@ function Navbar() {
         <nav className="navbar navbar-expand-lg navbar-light fixed-top bg-light">
             <div className="container-fluid">
                 <Link className="navbar-brand" to="/">
-                    <img src={logo} alt="" className="anthonyhai-logo" />
+                    <img
+                        src={
+                            "https://firebasestorage.googleapis.com/v0/b/anthonyhai.appspot.com/o/logo.png?alt=media&token=f0a3264b-50ec-42c3-bea6-df69e673fed4"
+                        }
+                        alt="logo"
+                        className="anthonyhai-logo"
+                    />
                 </Link>
                 <button
                     className="navbar-toggler"
@@ -24,28 +29,42 @@ function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav ms-auto">
                         <li className="nav-item">
-                            <Link
-                                className="nav-link active"
+                            <NavLink
+                                exact
+                                className="nav-link"
                                 aria-current="page"
                                 to="/"
+                                activeClassName="active"
                             >
                                 Home
-                            </Link>
+                            </NavLink>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link active" to="/about">
+                            <NavLink
+                                className="nav-link"
+                                to="/about"
+                                activeClassName="active"
+                            >
                                 About
-                            </Link>
+                            </NavLink>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link active" to="/project">
+                            <NavLink
+                                className="nav-link"
+                                to="/project"
+                                activeClassName="active"
+                            >
                                 Project
-                            </Link>
+                            </NavLink>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link active" to="/blog">
+                            <NavLink
+                                className="nav-link"
+                                to="/blog"
+                                activeClassName="active"
+                            >
                                 Blog
-                            </Link>
+                            </NavLink>
                         </li>
                     </ul>
                 </div>

@@ -14,9 +14,14 @@
             background-color: rgb(245, 131, 65);
             color: #fff;
             width: 100%;
-            text-align: center;
-            align-items: center;
-            justify-content: center;
+        }
+        .nav-link {
+            color: #000;
+            &.active {
+                border-radius: 5px;
+                background-color: rgb(245, 131, 65);
+                color: #fff;
+            }
         }
     }
 }

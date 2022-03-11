@@ -1,15 +1,5 @@
-import React, { useEffect, useLayoutEffect } from "react";
+import React from "react";
 import "./Intro.scss";
-import Avatar from "../../assets/images/avatar_about.png";
-import Ioe from "../../assets/images/ioe.png";
-import ClassImg from "../../assets/images/class2.png";
-import Dance from "../../assets/images/dancehd.jpg";
-import Event from "../../assets/images/event.png";
-import BeachImg from "../../assets/images/IMG_534.jpg";
-import ClassImgSecond from "../../assets/images/class2.jpg";
-import DCE from "../../assets/images/dce470.png";
-import ReviewMovie from "../../assets/images/reviewmovie470.png";
-import MoneyPlus from "../../assets/images/moneyplus.png";
 import { useSpring, animated } from "react-spring";
 function Intro() {
     const props = useSpring({
@@ -34,7 +24,10 @@ function Intro() {
                     <div className="container">
                         <div className="row">
                             <div className="col-md-6 text-center">
-                                <img src={Avatar} alt="Avatar" />
+                                <img
+                                    src={`https://firebasestorage.googleapis.com/v0/b/anthonyhai.appspot.com/o/avatar_about.png?alt=media&token=94f5e755-4fee-4582-b169-bd06798a9fa3`}
+                                    alt="Avatar"
+                                />
                             </div>
                             <div className="col-md-6 text-justify">
                                 <p>
@@ -85,10 +78,16 @@ function Intro() {
                                 </p>
                             </div>
                             <div className="col-md-6 text-center">
-                                <img src={Ioe} alt="Ioe Prize" />
+                                <img
+                                    src={`https://firebasestorage.googleapis.com/v0/b/anthonyhai.appspot.com/o/ioe.png?alt=media&token=98ae2cb9-a77b-40f5-8d0c-666fbe7aa1e9`}
+                                    alt="Ioe Prize"
+                                />
                             </div>
                             <div className="col-md-6 text-center">
-                                <img src={ClassImg} alt="My class" />
+                                <img
+                                    src={`https://firebasestorage.googleapis.com/v0/b/anthonyhai.appspot.com/o/class2.png?alt=media&token=d6a78e89-0480-41fe-94b1-bedb8326796a`}
+                                    alt="My class"
+                                />
                             </div>
                             <div className="col-md-6 text-justify">
                                 <p>
@@ -124,9 +123,11 @@ function Intro() {
                                 </a>
                             </p>
                             <img
-                                src={Dance}
+                                src={`https://firebasestorage.googleapis.com/v0/b/anthonyhai.appspot.com/o/dancehd.jpg?alt=media&token=7df0bc5b-3ade-4b09-988c-59700058e1ee`}
                                 alt="Dancing"
                                 className="dance-img"
+                                width="1038px"
+                                height="680px"
                             />
                             <div className="col-md-6 text-justify">
                                 <p>
@@ -137,7 +138,10 @@ function Intro() {
                                 </p>
                             </div>
                             <div className="col-md-6 text-center">
-                                <img src={Event} alt="Ioe Prize" />
+                                <img
+                                    src={`https://firebasestorage.googleapis.com/v0/b/anthonyhai.appspot.com/o/event.png?alt=media&token=f7c77284-4490-4788-bc13-d67d788e3827`}
+                                    alt="Vinpearl Condotel Beachfont"
+                                />
                             </div>
                             <p>
                                 The 12th grade anniversary is the most memorable
@@ -146,14 +150,16 @@ function Intro() {
                                 other when talking about it.{" "}
                             </p>
                             <img
-                                src={BeachImg}
+                                src={`https://firebasestorage.googleapis.com/v0/b/anthonyhai.appspot.com/o/IMG_534.jpg?alt=media&token=d6f85b84-d86b-427d-9da5-68876338b1cf`}
                                 alt="Beach with my class"
                                 className="class-image"
                             />
                             <img
-                                src={ClassImgSecond}
+                                src={`https://firebasestorage.googleapis.com/v0/b/anthonyhai.appspot.com/o/class2.jpg?alt=media&token=576f36ac-92e2-4b4d-8650-56a79cdcdc51`}
                                 alt="My 12th Class"
                                 className="class-image"
+                                width="1038px"
+                                height="680px"
                             />
                             <p>
                                 After that, I took the National High School exam
@@ -169,14 +175,20 @@ function Intro() {
                                 the semesters have created amazing apps
                             </p>
                             <div className="col-md-6 text-center">
-                                <img src={DCE} alt="DCE 2021" />
+                                <img
+                                    src={`https://firebasestorage.googleapis.com/v0/b/anthonyhai.appspot.com/o/dce470.png?alt=media&token=7cbe137b-7bf4-4d86-ba93-cebcecce3d08`}
+                                    alt="DCE 2021"
+                                />
                                 <p className="sub-name-project">
                                     Online Programming Course:{" "}
                                     <a href="https://dce2021.ml">dce2021.ml</a>
                                 </p>
                             </div>
                             <div className="col-md-6 text-center">
-                                <img src={ReviewMovie} alt="Nghiện Review" />
+                                <img
+                                    src={`https://firebasestorage.googleapis.com/v0/b/anthonyhai.appspot.com/o/reviewmovie470.png?alt=media&token=09dca217-8183-40da-8de0-66c33e7c62ff`}
+                                    alt="Nghiện Review"
+                                />
                                 <p className="sub-name-project">
                                     Review Movie Web:{" "}
                                     <a href="https://review-movie-uit.herokuapp.com">
@@ -185,9 +197,11 @@ function Intro() {
                                 </p>
                             </div>
                             <img
-                                src={MoneyPlus}
+                                src={`https://firebasestorage.googleapis.com/v0/b/anthonyhai.appspot.com/o/moneyplus.png?alt=media&token=3865130b-04c9-4c5d-8658-487b455082b9`}
                                 alt="Clone Money Plus"
                                 className="money-plus-img"
+                                width="100px"
+                                height="400px"
                             />
                             <p className="text-center sub-name-project">
                                 Clone App Money Plus

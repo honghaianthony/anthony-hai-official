@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./WebsiteProject.scss";
 import { Link } from "react-router-dom";
 import projectApis from "../../../apis/projectApis";
+import { useSpring, animated } from "react-spring";
 function WebsiteProject() {
     const [data, setData] = useState([]);
     const typeProject = "Website";
@@ -12,8 +13,15 @@ function WebsiteProject() {
         }
         asyncProject();
     }, []);
+
+    const props = useSpring({
+        opacity: 1,
+        transform: "translate(0px, 0px)",
+        from: { opacity: 0, transform: "translate(-200px, 0px)" },
+        config: { tension: 220, friction: 120 },
+    });
     return (
-        <div className="website-project-container">
+        <animated.div className="website-project-container" style={props}>
             <div className="website-project-title-container">
                 <div className="website-project-title">
                     <h4>Website Project</h4>
@@ -100,7 +108,7 @@ function WebsiteProject() {
                         </div>
                     );
                 })}
-        </div>
+        </animated.div>
     );
 }
 
