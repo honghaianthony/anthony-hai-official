@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Blog.scss";
 import FeaturingBlog from "./FeaturingBlog/FeaturingBlog";
 import blogApis from "../../apis/blogApis";
+import { useSpring, animated } from "react-spring";
 
 function Blog() {
     const [blogs, setBlogs] = useState([]);
@@ -38,9 +39,15 @@ function Blog() {
             );
         });
     };
-    console.log(idArray);
+    const props = useSpring({
+        opacity: 1,
+        transform: "translate(0px, 0px)",
+        from: { opacity: 0, transform: "translate(-20px, 1000px)" },
+        config: { tension: 220, friction: 120 },
+    });
+
     return (
-        <div className="blog-container">
+        <animated.div className="blog-container" style={props}>
             {blogs.length > 0 ? (
                 <div className="blog-list">
                     <div className="featuring-blog">
@@ -73,7 +80,7 @@ function Blog() {
             ) : (
                 <div className="loader"></div>
             )}
-        </div>
+        </animated.div>
     );
 }
 

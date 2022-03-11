@@ -59,7 +59,11 @@ function Footer() {
                                     icon={faEnvelope}
                                     color="#fff"
                                 />
-                                <a href="http://mail.google.com">
+                                <a
+                                    href="http://mail.google.com"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
                                     namsaoquan@gmail.com
                                 </a>
                             </div>
@@ -68,7 +72,11 @@ function Footer() {
                                     icon={faFacebook}
                                     color="#fff"
                                 />
-                                <a href="http://facebook.com/dangngohonghai">
+                                <a
+                                    href="http://facebook.com/dangngohonghai"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
                                     Dang Ngo Hong Hai
                                 </a>
                             </div>
@@ -77,7 +85,11 @@ function Footer() {
                                     icon={faInstagram}
                                     color="#fff"
                                 />
-                                <a href="http://instagram.com/anthony.haidang">
+                                <a
+                                    href="http://instagram.com/anthony.haidang"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
                                     anthony.haidang
                                 </a>
                             </div>
@@ -86,11 +98,12 @@ function Footer() {
                                     icon={faMapMarkerAlt}
                                     color="#fff"
                                 />
-                                <a href="http://maps.google.com">
-                                    Octorber 23<sup>rd</sup> Street, Nha Trang
-                                    City,
-                                    <br />
-                                    Khanh Hoa Province
+                                <a
+                                    href="http://maps.google.com"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    Nha Trang City, Khanh Hoa Province
                                 </a>
                             </div>
                         </div>
@@ -110,13 +123,23 @@ function Footer() {
                         <div className="footer-my-interests-detail">
                             <div className="footer-my-interests-detail-interest">
                                 <FontAwesomeIcon icon={faMusic} color="#fff" />
-                                <a href="https://www.youtube.com/watch?v=5qzmiSR41cY&list=PLz-RN_5tENm_WxttqUzciGItmAoHI-MjF">
+                                <a
+                                    href="https://www.youtube.com/watch?v=5qzmiSR41cY&list=PLz-RN_5tENm_WxttqUzciGItmAoHI-MjF"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
                                     My list musics
                                 </a>
                             </div>
                             <div className="footer-my-interests-detail-interest">
                                 <FontAwesomeIcon icon={faFilm} color="#fff" />
-                                <a href="#">My films</a>
+                                <a
+                                    href="https://www.google.com/search?q=girl+from+nowhere&sxsrf=APq-WBsgGhuKgaywo_YZ7kXmRQj7JY3Q9g%3A1646881053199&source=hp&ei=HWkpYqqECrnA3LUPpqaywA8&iflsig=AHkkrS4AAAAAYil3LYCmkR4X5Bep2tfENdVnm2rfhpU3&gs_ssp=eJzj4tVP1zc0TDMvMq20zKkyYPQSTM8sylFIK8rPVcjLL89ILUoFALXpC0E&oq=girl+&gs_lcp=Cgdnd3Mtd2l6EAEYADIECC4QJzIECAAQQzIECAAQQzIICAAQgAQQsQMyBQgAEMsBMgQIABBDMggIABCABBCxAzIECAAQQzIICC4QgAQQsQMyCAguEIAEELEDOgQIIxAnOgsIABCABBCxAxCDAToRCC4QgAQQsQMQgwEQxwEQ0QM6BQgAEIAEOgsILhCABBCxAxCDAVAAWLwHYJIQaANwAHgBgAGRAogBjAeSAQUzLjMuMZgBAKABAQ&sclient=gws-wiz"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    My films
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -132,12 +155,22 @@ function Footer() {
                         </div>
                         <div className="footer-pages-detail">
                             <div className="footer-page-detail-page">
-                                <a href="http://review-movie-uit.herokuapp.com/">
+                                <a
+                                    href="http://review-movie-uit.herokuapp.com/"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
                                     Review Movie
                                 </a>
                             </div>
                             <div className="footer-page-detail-page">
-                                <a href="https://dce2021.vercel.app/">DCE</a>
+                                <a
+                                    href="https://dce2021.ml/"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    DCE
+                                </a>
                             </div>
                         </div>
                     </div>

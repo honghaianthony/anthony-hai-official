@@ -2,6 +2,7 @@ import React, { useLayoutEffect, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Project.scss";
 import projectApis from "../../apis/projectApis";
+import { useSpring, animated } from "react-spring";
 function Project() {
     useLayoutEffect(() => {
         window.scrollTo(0, 0);
@@ -26,8 +27,15 @@ function Project() {
     }, []);
     var projectCount = Object.keys(projectData).length;
     var mobileCount = Object.keys(mobileData).length;
+
+    const props = useSpring({
+        opacity: 1,
+        transform: "translate(0px, 0px)",
+        from: { opacity: 0, transform: "translate(0px, -300px)" },
+        config: { tension: 220, friction: 120 },
+    });
     return (
-        <div className="project-container">
+        <animated.div className="project-container" style={props}>
             <div className="project-website">
                 <div className="project-website-background">
                     <div className="project-website-left">
@@ -114,7 +122,7 @@ function Project() {
                     </div>
                 </div>
             </div>
-        </div>
+        </animated.div>
     );
 }
 
