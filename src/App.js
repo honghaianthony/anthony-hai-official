@@ -13,7 +13,7 @@ function App() {
                 />
                 <meta
                     name="keywords"
-                    content="Portfolio, Hong Hai Official, Hong Hai Portfolio, Hong Hai Blog"
+                    content="Portfolio, Hong Hai Official, Hong Hai Portfolio, Hong Hai Blog, Anthony Hai Official, anthonyhai, Anthony Hai Portfolio"
                 />
                 <style type="text/css">{`
                 .app{
