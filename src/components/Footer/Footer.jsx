@@ -64,7 +64,7 @@ function Footer() {
                                     target="_blank"
                                     rel="noreferrer"
                                 >
-                                    namsaoquan@gmail.com
+                                    anthonyhaidev@gmail.com
                                 </a>
                             </div>
                             <div className="footer-contact-detail-contact">
