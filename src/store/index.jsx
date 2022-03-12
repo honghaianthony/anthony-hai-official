@@ -1,2 +1,2 @@
-export { useStore } from "./useStore";
-export * as actions from "./actions";
+export { useStore } from "./UseStore";
+export * as actions from "./Actions";

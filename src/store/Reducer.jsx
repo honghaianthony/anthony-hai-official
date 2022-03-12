@@ -1,4 +1,4 @@
-import { LOGIN, LOGOUT, RELOAD } from "./constants";
+import { LOGIN, LOGOUT, RELOAD } from "./Constants";
 import jwtDecode from "jwt-decode";
 
 const initState = {

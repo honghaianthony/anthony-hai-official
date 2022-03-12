@@ -1,20 +1,20 @@
-import { LOGIN, LOGOUT, RELOAD } from "./constants";
+import { LOGIN, LOGOUT, RELOAD } from "./Constants";
 
 export const login = (payload) => {
-  return {
-    type: LOGIN,
-    payload,
-  };
+    return {
+        type: LOGIN,
+        payload,
+    };
 };
 export const logout = (payload) => {
-  return {
-    type: LOGOUT,
-    payload,
-  };
+    return {
+        type: LOGOUT,
+        payload,
+    };
 };
 export const reload = (payload) => {
-  return {
-    type: RELOAD,
-    payload,
-  };
+    return {
+        type: RELOAD,
+        payload,
+    };
 };
