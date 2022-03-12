@@ -9,7 +9,7 @@ const initState = {
     fullname: "",
 };
 
-function Reducer(state, action) {
+function reducer(state, action) {
     switch (action.type) {
         case RELOAD:
             const token = localStorage.getItem("token");
@@ -45,4 +45,4 @@ function Reducer(state, action) {
 }
 
 export { initState };
-export default Reducer;
+export default reducer;
