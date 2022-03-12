@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import "./AdminProfile.scss";
-import { useStore, actions } from "../../store";
+import { UseStore, Actions } from "../../store";
 const clickOutsideRef = (content_ref, toggle_ref) => {
     document.addEventListener("mousedown", (e) => {
         // user click toggle
@@ -21,9 +21,9 @@ const clickOutsideRef = (content_ref, toggle_ref) => {
 const AdminProfile = (props) => {
     const [clickedIndex, setClickedIndex] = useState({});
 
-    const [state, dispatch] = useStore();
+    const [state, dispatch] = UseStore();
     const handleLogOut = () => {
-        dispatch(actions.logout());
+        dispatch(Actions.logout());
     };
 
     const dropdown_toggle_el = useRef(null);

@@ -31,7 +31,7 @@ function Blog() {
                     blogId={blogs[item].id}
                     src={blogs[item].coverImage}
                     title={blogs[item].title}
-                    author={`${blogs[item].User.firstName} ${blogs[item].User.lastName}`}
+                    author={`${blogs[item].user.firstName} ${blogs[item].user.lastName}`}
                     time={new Date(blogs[item].updatedAt).toLocaleDateString()}
                     // path={path}
                     description={blogs[item].description}
@@ -58,7 +58,7 @@ function Blog() {
                                 src={blogs[firstItem].coverImage}
                                 title={blogs[firstItem].title}
                                 description={blogs[firstItem].description}
-                                author={`${blogs[firstItem].User.firstName} ${blogs[firstItem].User.lastName} `}
+                                author={`${blogs[firstItem].user.firstName} ${blogs[firstItem].user.lastName} `}
                                 time={new Date(
                                     blogs[firstItem].updatedAt
                                 ).toLocaleDateString()}
