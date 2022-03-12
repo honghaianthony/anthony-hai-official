@@ -80,12 +80,12 @@ function Dashboard() {
 
     const renderOrderContent = (item, index) => (
         <tr key={index}>
-            <td>{item.id}</td>
+            <td>{item._id}</td>
             <td>{item.title}</td>
             <td>{getFormattedDate(item.createdAt)}</td>
             <td>{getFormattedDate(item.updatedAt)}</td>
             <td>
-                <Link to={`/blog-admin/update/${item.id}`}>
+                <Link to={`/blog-admin/update/${item._id}`}>
                     <button className="view-btn">Update</button>
                 </Link>
             </td>
@@ -104,7 +104,7 @@ function Dashboard() {
 
     const renderOrderProjectContent = (item, index) => (
         <tr key={index}>
-            <td>{item.id}</td>
+            <td>{item._id}</td>
             <td>{item.title}</td>
             <td>{item.authorName}</td>
             <td>{item.linkProject}</td>
@@ -112,7 +112,7 @@ function Dashboard() {
             <td>{getFormattedDate(item.createdAt)}</td>
             <td>{getFormattedDate(item.updatedAt)}</td>
             <td>
-                <Link to={`/project-admin/update/${item.id}`}>
+                <Link to={`/project-admin/update/${item._id}`}>
                     <button className="view-btn">Update</button>
                 </Link>
             </td>

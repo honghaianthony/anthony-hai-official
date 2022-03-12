@@ -1,9 +1,9 @@
 import Sidebar from "../components/Sidebar/Sidebar";
 import AdminTopNav from "../components/AdminTopNav/AdminTopNav";
-import { UseStore } from "../store";
+import { useStore } from "../store";
 import "../assets/scss/AdminAppearance.scss";
 function AdminLayout({ children }) {
-    const [state, dispatch] = UseStore();
+    const [state, dispatch] = useStore();
     return (
         <div className="layout">
             <div className="layout-content">

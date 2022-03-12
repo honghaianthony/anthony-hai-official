@@ -19,15 +19,15 @@ import {
     UpdateProject,
 } from "../pages";
 import ScrollToTop from "../helpers/ScrollToTop";
-import { UseStore, Actions } from "../store";
+import { useStore, actions } from "../store";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 export default function App() {
-    const [state, dispatch] = UseStore();
+    const [state, dispatch] = useStore();
 
     useEffect(() => {
-        dispatch(Actions.reload());
+        dispatch(actions.reload());
     }, []);
     return (
         <BrowserRouter>
