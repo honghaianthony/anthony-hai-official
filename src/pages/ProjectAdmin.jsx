@@ -1,7 +1,7 @@
 import React from "react";
 import AdminLayout from "../layouts/AdminLayout";
 import ProjectAdminPage from "../components/ProjectAdmin/ProjectAdmin";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 function ProjectAdmin() {
     return (
         <>

@@ -29,7 +29,7 @@ function BlogDetail() {
                             />
                         </Helmet>
                         <h4>{data.title}</h4>
-                        <span class="animate-border mt-2 mb-6"></span>
+                        <span className="animate-border mt-2 mb-6"></span>
                     </div>
                     <div className="blog-detail-author">
                         <div className="blog-detail-author-left">

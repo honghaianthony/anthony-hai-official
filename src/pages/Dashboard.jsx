@@ -1,7 +1,7 @@
 import React from "react";
 import AdminLayout from "../layouts/AdminLayout";
 import DashboardPage from "../components/Dashboard/Dashboard";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 function Dashboard() {
     return (

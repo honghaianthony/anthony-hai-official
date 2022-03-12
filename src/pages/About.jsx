@@ -1,11 +1,11 @@
 import React from "react";
 import MainLayout from "../layouts/MainLayout";
 import Intro from "../components/Intro/Intro";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 function About() {
     return (
         <>
-            <Helmet>
+            <Helmet prioritizeSeoTags>
                 <title>About</title>
                 <meta
                     name="description"

@@ -26,7 +26,7 @@ function Footer() {
                                 color="#fff"
                             />
                             <span> Link</span>
-                            <span class="animate-border mt-2 mb-6"></span>
+                            <span className="animate-border mt-2 mb-6"></span>
                         </div>
                         <div className="footer-link-detail">
                             <div className="footer-link-detail-link">
@@ -44,17 +44,17 @@ function Footer() {
                         </div>
                     </div>
                     <div className="footer-contact">
-                        <div class="footer-contact-title">
+                        <div className="footer-contact-title">
                             <FontAwesomeIcon
                                 icon={faMapMarkedAlt}
                                 size="2x"
                                 color="#fff"
                             />
                             <span> Contact</span>
-                            <span class="animate-border mt-2 mb-6"></span>
+                            <span className="animate-border mt-2 mb-6"></span>
                         </div>
-                        <div class="footer-contact-detail">
-                            <div class="footer-contact-detail-contact">
+                        <div className="footer-contact-detail">
+                            <div className="footer-contact-detail-contact">
                                 <FontAwesomeIcon
                                     icon={faEnvelope}
                                     color="#fff"
@@ -67,7 +67,7 @@ function Footer() {
                                     namsaoquan@gmail.com
                                 </a>
                             </div>
-                            <div class="footer-contact-detail-contact">
+                            <div className="footer-contact-detail-contact">
                                 <FontAwesomeIcon
                                     icon={faFacebook}
                                     color="#fff"
@@ -80,7 +80,7 @@ function Footer() {
                                     Dang Ngo Hong Hai
                                 </a>
                             </div>
-                            <div class="footer-contact-detail-contact">
+                            <div className="footer-contact-detail-contact">
                                 <FontAwesomeIcon
                                     icon={faInstagram}
                                     color="#fff"
@@ -93,7 +93,7 @@ function Footer() {
                                     anthony.haidang
                                 </a>
                             </div>
-                            <div class="footer-contact-detail-contact">
+                            <div className="footer-contact-detail-contact">
                                 <FontAwesomeIcon
                                     icon={faMapMarkerAlt}
                                     color="#fff"
@@ -111,14 +111,14 @@ function Footer() {
                 </div>
                 <div className="footer-wrap-right">
                     <div className="footer-my-interests">
-                        <div class="footer-my-interests-title">
+                        <div className="footer-my-interests-title">
                             <FontAwesomeIcon
                                 icon={faHeart}
                                 color="#fff"
                                 size="2x"
                             />
                             <span> My interests</span>
-                            <span class="animate-border mt-2 mb-6"></span>
+                            <span className="animate-border mt-2 mb-6"></span>
                         </div>
                         <div className="footer-my-interests-detail">
                             <div className="footer-my-interests-detail-interest">
@@ -144,14 +144,14 @@ function Footer() {
                         </div>
                     </div>
                     <div className="footer-pages">
-                        <div class="footer-pages-title">
+                        <div className="footer-pages-title">
                             <FontAwesomeIcon
                                 icon={faPager}
                                 color="#fff"
                                 size="2x"
                             />
                             <span> Pages</span>
-                            <span class="animate-border mt-2 mb-6"></span>
+                            <span className="animate-border mt-2 mb-6"></span>
                         </div>
                         <div className="footer-pages-detail">
                             <div className="footer-page-detail-page">
@@ -177,10 +177,10 @@ function Footer() {
                 </div>
             </div>
             <div className="footer-down">
-                <div class="content-down-copyright">
+                <div className="content-down-copyright">
                     <span>Copyright belongs to Dang Ngo Hong Hai</span>
                 </div>
-                <div class="content-down-allrights">
+                <div className="content-down-allrights">
                     <p>&#169; {new Date().getFullYear()} All rights reserved</p>
                 </div>
             </div>

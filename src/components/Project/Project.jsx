@@ -72,7 +72,7 @@ function Project() {
                         </div>
                         <div className="project-website-see-details">
                             <Link
-                                class="btn btn-primary btn-see-details"
+                                className="btn btn-primary btn-see-details"
                                 to="/project/website-project"
                                 role="button"
                             >
@@ -112,7 +112,7 @@ function Project() {
                         </div>
                         <div className="project-mobile-see-details">
                             <Link
-                                class="btn btn-primary btn-see-details"
+                                className="btn btn-primary btn-see-details"
                                 to="/project/mobile-project"
                                 role="button"
                             >

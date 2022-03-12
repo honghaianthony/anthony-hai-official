@@ -152,7 +152,7 @@ function UpdateBlog() {
                                         />
                                         <br />
                                         <i
-                                            class="far fa-times-circle"
+                                            className="far fa-times-circle"
                                             onClick={deleteImage}
                                         ></i>
                                         <img
