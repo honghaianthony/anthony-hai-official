@@ -1,11 +1,11 @@
 import React from "react";
 import AnotherLayout from "../layouts/AnotherLayout";
 import Login from "../components/Authentication/Login";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 function LoginPage() {
     return (
         <>
-            <Helmet>
+            <Helmet prioritizeSeoTags>
                 <title>Login</title>
                 <meta name="description" content="Login" />
             </Helmet>

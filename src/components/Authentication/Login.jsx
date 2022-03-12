@@ -78,10 +78,10 @@ function Login() {
                         </div>
                     </div>
                     <div className="login-copyright">
-                        <div class="content-down-copyright">
+                        <div className="content-down-copyright">
                             <span>Copyright belongs to Dang Ngo Hong Hai</span>
                         </div>
-                        <div class="content-down-allrights">
+                        <div className="content-down-allrights">
                             <p>
                                 &#169; {new Date().getFullYear()} All rights
                                 reserved
