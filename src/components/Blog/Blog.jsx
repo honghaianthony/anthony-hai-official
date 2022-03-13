@@ -27,8 +27,8 @@ function Blog() {
             // let path = "/blog/" + item.id;
             return (
                 <FeaturingBlog
-                    key={blogs[item].id}
-                    blogId={blogs[item].id}
+                    key={blogs[item]._id}
+                    blogId={blogs[item]._id}
                     src={blogs[item].coverImage}
                     title={blogs[item].title}
                     author={`${blogs[item].user.firstName} ${blogs[item].user.lastName}`}
