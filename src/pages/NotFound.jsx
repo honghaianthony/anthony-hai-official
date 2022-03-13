@@ -1,5 +1,5 @@
 import React from "react";
-import AnotherLayout from "../layouts/AnotherLayout";
+import NotFoundLayout from "../layouts/NotFoundLayout";
 import NotFoundPage from "../components/NotFound/NotFound";
 import { Helmet } from "react-helmet-async";
 function NotFound() {
@@ -9,9 +9,9 @@ function NotFound() {
                 <title>404 - Not Found</title>
                 <meta name="description" content="Not found 404" />
             </Helmet>
-            <AnotherLayout>
+            <NotFoundLayout>
                 <NotFoundPage />
-            </AnotherLayout>
+            </NotFoundLayout>
         </>
     );
 }

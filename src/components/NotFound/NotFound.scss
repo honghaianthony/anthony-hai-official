@@ -1,0 +1,24 @@
+.not-found {
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 150px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    img {
+        width: 1000px;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .link-home {
+        text-decoration: none;
+        width: 175px;
+        height: 40px;
+        border-radius: 11px;
+        background-color: #f21e44;
+        color: #fff;
+        margin: 0 auto;
+        justify-content: center;
+        padding-top: 8px;
+    }
+}
