@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-    baseURL: "http://localhost:3301/api",
+    baseURL: "https://arcane-ocean-27301.herokuapp.com/api",
 });
 
 axiosInstance.defaults.headers.common[
