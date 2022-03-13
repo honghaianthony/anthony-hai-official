@@ -1,13 +1,15 @@
 import { useReducer } from "react";
 import Context from "./Context";
-import reducer, { initState } from "./reducer";
+import reducer, { initState } from "./Reducer";
 
 function Provider({ children }) {
-  const [state, dispatch] = useReducer(reducer, initState);
+    const [state, dispatch] = useReducer(reducer, initState);
 
-  return (
-    <Context.Provider value={[state, dispatch]}>{children}</Context.Provider>
-  );
+    return (
+        <Context.Provider value={[state, dispatch]}>
+            {children}
+        </Context.Provider>
+    );
 }
 
 export default Provider;

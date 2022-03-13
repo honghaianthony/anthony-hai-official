@@ -2,11 +2,11 @@ import React from "react";
 import "./Login.scss";
 import { Link, useHistory } from "react-router-dom";
 import Logo from "../../assets/images/logo.png";
-import { useStore, actions } from "../../store";
+import { UseStore, Actions } from "../../store";
 import authApi from "../../apis/authApis";
 
 function Login() {
-    const [state, dispatch] = useStore();
+    const [state, dispatch] = UseStore();
     const history = useHistory();
     const handleLogin = async (e) => {
         e.preventDefault();
@@ -15,7 +15,7 @@ function Login() {
             password: e.target.password.value,
         };
         const res = await authApi.login(body);
-        dispatch(actions.login(res.token));
+        dispatch(Actions.login(res.token));
     };
     return (
         <>

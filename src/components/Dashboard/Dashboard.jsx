@@ -50,7 +50,7 @@ function Dashboard() {
 
     const handleDelete = async (blog) => {
         try {
-            const res = await blogApis.deleteBlogById(blog.id);
+            const res = await blogApis.deleteBlogById(blog._id);
             if (res && res.errCode === 0) {
                 const successList = await blogApis.getAllBlogs();
                 setData(successList);
@@ -65,7 +65,7 @@ function Dashboard() {
 
     const handleProjectDelete = async (project) => {
         try {
-            const res = await projectApis.deleteProject(project.id);
+            const res = await projectApis.deleteProject(project._id);
             if (res && res.errCode === 0) {
                 const successList = await projectApis.getAllProjects();
                 setProjectData(successList);

@@ -6,15 +6,15 @@ import { Helmet } from "react-helmet";
 
 function BlogDetail() {
     const [data, setData] = useState(null);
-    const { id } = useParams();
+    const { _id } = useParams();
 
     useEffect(() => {
         async function asyncProject() {
-            const res = await blogApis.getBlogById(id);
+            const res = await blogApis.getBlogById(_id);
             setData(res);
         }
         asyncProject();
-    }, [id]);
+    }, [_id]);
 
     return (
         <div className="blog-detail-container">

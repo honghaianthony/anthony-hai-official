@@ -54,7 +54,7 @@ function Blog() {
                         <h4 className="featuring-blog-title">Featuring Blog</h4>
                         <div className="featuring-blog-item">
                             <FeaturingBlog
-                                blogId={blogs[firstItem].id}
+                                blogId={blogs[firstItem]._id}
                                 src={blogs[firstItem].coverImage}
                                 title={blogs[firstItem].title}
                                 description={blogs[firstItem].description}

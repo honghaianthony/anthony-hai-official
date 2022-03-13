@@ -1,8 +1,8 @@
 import { Route, Redirect, useLocation } from "react-router-dom";
-import { useStore } from "../store";
+import { UseStore } from "../store";
 
 function PrivateRoute({ children, ...rest }) {
-    const [state, dispatch] = useStore();
+    const [state, dispatch] = UseStore();
     const location = useLocation();
     return (
         <Route {...rest}>
