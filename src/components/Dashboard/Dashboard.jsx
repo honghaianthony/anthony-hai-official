@@ -58,9 +58,7 @@ function Dashboard() {
             } else {
                 toast.error("Deleted failed");
             }
-        } catch (error) {
-            console.log(error);
-        }
+        } catch (error) {}
     };
 
     const handleProjectDelete = async (project) => {
@@ -73,9 +71,7 @@ function Dashboard() {
             } else {
                 toast.error("Deleted failed");
             }
-        } catch (error) {
-            console.log(error);
-        }
+        } catch (error) {}
     };
 
     const renderOrderContent = (item, index) => (

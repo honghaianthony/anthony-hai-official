@@ -8,7 +8,7 @@ import {
 
 const deleteFile = (url, success, cb) => {
     let storageRef = ref(storage, url);
-    console.log(storageRef.name);
+
     // Create a reference to the file to delete
     const desertRef = ref(storage, `images/${storageRef.name}`);
 
@@ -38,9 +38,7 @@ const uploadFile = async (image, setProgress, setUrl) => {
             );
             setProgress(progress);
         },
-        (error) => {
-            console.log(error);
-        },
+        (error) => {},
         () => {
             getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
                 setUrl(downloadURL);

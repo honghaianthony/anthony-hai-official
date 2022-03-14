@@ -169,11 +169,6 @@ function UpdateBlog() {
                             <div className="add-blog-content-editor">
                                 <CKEditor
                                     onReady={(editor) => {
-                                        console.log(
-                                            "Editor is ready to use!",
-                                            editor
-                                        );
-
                                         // Insert the toolbar before the editable area.
                                         editor.ui
                                             .getEditableElement()
