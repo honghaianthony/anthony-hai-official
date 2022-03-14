@@ -53,32 +53,27 @@ export default function App() {
                         component={MobileProject}
                     ></Route>
                     <PrivateRoute
-                        exact
                         path="/admin"
                         component={Dashboard}
                     ></PrivateRoute>
                     <PrivateRoute
-                        exact
                         path="/project-admin"
                         component={ProjectAdmin}
                     ></PrivateRoute>
                     <PrivateRoute
-                        exact
                         path="/blog-admin"
                         component={BlogAdmin}
                     ></PrivateRoute>
                     <PrivateRoute
-                        exact
                         path="/blog-admin/update/:blogId"
                         component={UpdateBlog}
                     ></PrivateRoute>
                     <PrivateRoute
-                        exact
                         path="/project-admin/update/:projectId"
                         component={UpdateProject}
                     ></PrivateRoute>
-                    <Route exact path="/login" component={Login}></Route>
-                    <Route exact path="*" component={NotFound} />
+                    <Route path="/login" component={Login}></Route>
+                    <Route path="*" component={NotFound} />
                 </Switch>
             </ScrollToTop>
             <ToastContainer
