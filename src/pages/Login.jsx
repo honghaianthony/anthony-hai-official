@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet-async";
 function LoginPage() {
     return (
         <>
-            <Helmet prioritizeSeoTags>
+            <Helmet>
                 <title>Login</title>
                 <meta name="description" content="Login" />
             </Helmet>

@@ -77,7 +77,7 @@ export default function App() {
                         path="/project-admin/update/:projectId"
                         component={UpdateProject}
                     ></PrivateRoute>
-                    <Route path="/login" component={Login}></Route>
+                    <Route exact path="/login" component={Login}></Route>
                     <Route path="*" component={NotFound} />
                 </Switch>
             </ScrollToTop>
