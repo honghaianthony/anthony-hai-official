@@ -1,5 +1,5 @@
 import React from "react";
-import "./Login.scss";
+import "./Login.css";
 import { Link, useHistory } from "react-router-dom";
 import Logo from "../../assets/images/logo.png";
 import { UseStore, Actions } from "../../store";
