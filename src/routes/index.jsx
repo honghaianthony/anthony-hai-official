@@ -33,7 +33,14 @@ export default function App() {
         <BrowserRouter>
             <ScrollToTop>
                 <Switch>
-                    <Route exact path="/" component={Home}></Route>
+                    <Route
+                        exact
+                        path="/"
+                        render={() => {
+                            return <Redirect to="/home" />;
+                        }}
+                    />
+                    <Route exact path="/home" component={Home}></Route>
                     <Route exact path="/about" component={About}></Route>
                     <Route exact path="/project" component={Project}></Route>
                     <Route exact path="/blog" component={Blog}></Route>
@@ -78,7 +85,7 @@ export default function App() {
                         component={UpdateProject}
                     ></PrivateRoute>
                     <Route exact path="/login" component={Login}></Route>
-                    <Route path="*" component={NotFound} />
+                    <Route exact path="*" component={NotFound} />
                 </Switch>
             </ScrollToTop>
             <ToastContainer
