@@ -181,7 +181,10 @@ function Footer() {
                     <span>Copyright belongs to Dang Ngo Hong Hai</span>
                 </div>
                 <div className="content-down-allrights">
-                    <p>&#169; {new Date().getFullYear()} All rights reserved</p>
+                    <p>
+                        &#169; {new Date().getFullYear()} All rights reserve
+                        <Link to="/login">d</Link>
+                    </p>
                 </div>
             </div>
         </div>
