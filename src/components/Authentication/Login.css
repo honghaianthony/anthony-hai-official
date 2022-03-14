@@ -78,11 +78,6 @@
 .content-down-copyright {
     margin: 10px 0;
     text-align: center;
-    span {
-        color: #fff;
-        justify-content: center;
-        text-align: center;
-    }
 }
 .content-down-copyright span {
     color: #fff;
