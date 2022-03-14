@@ -10,16 +10,20 @@ import { hydrate, render } from "react-dom";
 const rootElement = document.getElementById("root");
 if (rootElement.hasChildNodes()) {
     hydrate(
-        <AuthProvider>
-            <App />
-        </AuthProvider>,
+        <React.StrictMode>
+            <AuthProvider>
+                <App />
+            </AuthProvider>
+        </React.StrictMode>,
         rootElement
     );
 } else {
     render(
-        <AuthProvider>
-            <App />
-        </AuthProvider>,
+        <React.StrictMode>
+            <AuthProvider>
+                <App />
+            </AuthProvider>
+        </React.StrictMode>,
         rootElement
     );
 }
