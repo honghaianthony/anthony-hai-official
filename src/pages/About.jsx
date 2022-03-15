@@ -9,7 +9,7 @@ function About() {
                 <title>About</title>
                 <meta
                     name="description"
-                    content="The information of Hong Hai"
+                    content="The portfolio information of Hong Hai"
                 />
             </Helmet>
             <MainLayout>
