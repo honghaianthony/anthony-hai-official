@@ -6,7 +6,7 @@ function ProjectAdmin() {
     return (
         <>
             <Helmet>
-                <title>Project Admin Management</title>
+                <title>Project Admin Management - Hong Hai Official</title>
                 <meta name="description" content="Project admin management" />
             </Helmet>
             <AdminLayout>

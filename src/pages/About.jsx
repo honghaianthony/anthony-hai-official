@@ -6,11 +6,18 @@ function About() {
     return (
         <>
             <Helmet prioritizeSeoTags>
-                <title>About</title>
+                <title>About - Hong Hai Official</title>
                 <meta
                     name="description"
                     content="The portfolio information of Hong Hai"
                 />
+                <link
+                    rel="Hong Hai Official"
+                    href="https://www.anthonyhai.tk/"
+                />
+                <meta name="Title" value="About" />
+                <link rel="canonical" href="https://www.anthonyhai.tk/" />
+                <meta property="og:title" content="About" />
             </Helmet>
             <MainLayout>
                 <Intro />

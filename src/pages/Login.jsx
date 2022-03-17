@@ -6,8 +6,11 @@ function LoginPage() {
     return (
         <>
             <Helmet>
-                <title>Login</title>
+                <title>Login - Hong Hai Official</title>
                 <meta name="description" content="Login" />
+                <meta name="Title" value="Hong Hai Official" />
+                <link rel="canonical" href="https://www.anthonyhai.tk/" />
+                <meta property="og:title" content="Hong Hai Official" />
             </Helmet>
             <AnotherLayout>
                 <Login />

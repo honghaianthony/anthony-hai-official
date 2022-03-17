@@ -6,8 +6,11 @@ function MobileProject() {
     return (
         <>
             <Helmet prioritizeSeoTags>
-                <title>Mobile Project</title>
+                <title>Mobile Project - Hong Hai Official</title>
                 <meta name="description" content="Mobile Project of Hong Hai" />
+                <meta name="Title" value="Hong Hai Official Project" />
+                <link rel="canonical" href="https://www.anthonyhai.tk/" />
+                <meta property="og:title" content="Hong Hai Official Project" />
             </Helmet>
             <MainLayout>
                 <MobileProjectDetail />

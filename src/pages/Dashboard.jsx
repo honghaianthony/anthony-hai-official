@@ -7,8 +7,11 @@ function Dashboard() {
     return (
         <>
             <Helmet>
-                <title>Dashboard</title>
+                <title>Dashboard - Hong Hai Official</title>
                 <meta name="description" content="Dashboard" />
+                <meta name="Title" value="Hong Hai Official" />
+                <link rel="canonical" href="https://www.anthonyhai.tk/" />
+                <meta property="og:title" content="Hong Hai Official" />
             </Helmet>
             <AdminLayout>
                 <DashboardPage />

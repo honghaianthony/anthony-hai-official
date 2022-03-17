@@ -6,8 +6,11 @@ function Project() {
     return (
         <>
             <Helmet prioritizeSeoTags>
-                <title>Project</title>
-                <meta name="description" content="Projects of Hong Hai" />
+                <title>Project - Hong Hai Official</title>
+                <meta name="description" content="Hong Hai Official Project" />
+                <meta name="Title" value="Hong Hai Official Project" />
+                <link rel="canonical" href="https://www.anthonyhai.tk/" />
+                <meta property="og:title" content="Hong Hai Official Project" />
             </Helmet>
             <MainLayout>
                 <ProjectProduct />

@@ -21,12 +21,22 @@ function BlogDetail() {
             {data ? (
                 <div className="blog-detail">
                     <div className="blog-detail-title">
-                        <Helmet>
-                            <title>{data.title}</title>
+                        <Helmet prioritizeSeoTags>
+                            <title>{data.title} - Hong Hai Official</title>
                             <meta
                                 name="description"
                                 content={data.description}
                             />
+                            <link
+                                rel="Hong Hai Official"
+                                href="https://www.anthonyhai.tk/"
+                            />
+                            <meta name="Title" value={data.title} />
+                            <link
+                                rel="canonical"
+                                href="https://www.anthonyhai.tk/"
+                            />
+                            <meta property="og:title" content={data.title} />
                         </Helmet>
                         <h4>{data.title}</h4>
                         <span className="animate-border mt-2 mb-6"></span>

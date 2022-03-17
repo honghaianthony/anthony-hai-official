@@ -6,8 +6,11 @@ function UpdateBlog() {
     return (
         <>
             <Helmet>
-                <title>Update Project</title>
+                <title>Update Project - Hong Hai Official</title>
                 <meta name="description" content="Update project admin" />
+                <meta name="Title" value="Hong Hai Official" />
+                <link rel="canonical" href="https://www.anthonyhai.tk/" />
+                <meta property="og:title" content="Hong Hai Official" />
             </Helmet>
             <AdminLayout>
                 <UpdateProjectPage />

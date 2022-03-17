@@ -8,6 +8,9 @@ function NotFound() {
             <Helmet>
                 <title>404 - Not Found</title>
                 <meta name="description" content="Not found 404" />
+                <meta name="Title" value="Hong Hai Official" />
+                <link rel="canonical" href="https://www.anthonyhai.tk/" />
+                <meta property="og:title" content="Hong Hai Official" />
             </Helmet>
             <NotFoundLayout>
                 <NotFoundPage />
