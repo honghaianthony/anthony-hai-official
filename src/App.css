@@ -6,3 +6,17 @@
     min-height: 100vh;
     background-color: #fff;
 }
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 25px;
+    background-color: #979393;
+    outline: none;
+}
+::-webkit-scrollbar-thumb:hover {
+    border-radius: 25px;
+    background-color: #717171;
+    outline: none;
+}
