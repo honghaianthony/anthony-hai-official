@@ -18,14 +18,6 @@ ReactDOM.hydrate(
                         content="Portfolio, Hong Hai Official, Hong Hai Portfolio, Hong Hai Blog, Anthony Hai Official, anthonyhai, Anthony Hai Portfolio"
                     />
 
-                    <style type="text/css">{`
-                .app{
-                    background-color: #fff;
-                }
-                .header{
-                    background-color: #f8f9fa;
-                    color: black;
-                }`}</style>
                     <meta name="title" content="Hong Hai Official" />
                     <meta
                         name="description"
