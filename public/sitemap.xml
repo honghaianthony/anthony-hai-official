@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://www.anthonyhai.tk/</loc>
+  <lastmod>2022-03-21T14:51:30+00:00</lastmod>
+  <changefreq>daily<changefreq>
+  <priority>1.0</priority>
+</url>
+<url>
+  <loc>https://www.anthonyhai.tk/about</loc>
+  <lastmod>2022-03-21T14:51:30+00:00</lastmod>
+  <changefreq>monthly<changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://www.anthonyhai.tk/project</loc>
+  <lastmod>2022-03-21T14:51:30+00:00</lastmod>
+  <changefreq>monthly<changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://www.anthonyhai.tk/blog</loc>
+  <lastmod>2022-03-21T14:51:30+00:00</lastmod>
+  <changefreq>weekly<changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://www.anthonyhai.tk/blog/the-beautiful-moment-of-my-12th-grade.622d7299466cfa92b3cc3dd2.html</loc>
+  <lastmod>2022-03-21T14:51:30+00:00</lastmod>
+  <changefreq>weekly<changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://www.anthonyhai.tk/blog/dce-online-free-course-learning.622d7eaf466cfa92b3cc3e29.html</loc>
+  <lastmod>2022-03-21T14:51:30+00:00</lastmod>
+  <changefreq>weekly<changefreq>
+  <priority>0.8</priority>
+</url>
+</urlset>
