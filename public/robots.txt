@@ -1,13 +1,8 @@
 User-agent: *
 Allow: /about
-User-agent: *
 Allow: /project
-User-agent: *
 Allow: /project/website-project
-User-agent: *
 Allow: /project/mobile-project
-User-agent: *
 Allow: /blog
-User-agent: *
-Disallow: /admin
+
 
