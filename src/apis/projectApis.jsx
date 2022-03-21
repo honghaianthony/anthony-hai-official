@@ -13,15 +13,21 @@ const getProjectByType = async (type) => {
 };
 
 const addNewProject = async (data) => {
-    return await axios.post("project/add-new-project", data);
+    return await axios.post("project/add-new-project", data, {
+        headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
+    });
 };
 
 const updateProject = async (data) => {
-    return await axios.put("project/update-project", data);
+    return await axios.put("project/update-project", data, {
+        headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
+    });
 };
 
 const deleteProject = async (id) => {
-    return await axios.delete(`project/delete-project-by-id?id=${id}`);
+    return await axios.delete(`project/delete-project-by-id?id=${id}`, {
+        headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
+    });
 };
 
 export default {

@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
-import "../assets/scss/AdminAppearance.scss";
 import PrivateRoute from "./PrivateRoute";
 import {
     Home,

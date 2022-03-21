@@ -9,7 +9,9 @@ const getBlogById = async (id) => {
 };
 
 const addNewBlog = async (data) => {
-    return await axios.post("blog/add-new-blog", data);
+    return await axios.post("blog/add-new-blog", data, {
+        headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
+    });
 };
 
 const uploads = async () => {
@@ -17,11 +19,15 @@ const uploads = async () => {
 };
 
 const updateBlog = async (data) => {
-    return await axios.put("blog/update-blog", data);
+    return await axios.put("blog/update-blog", data, {
+        headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
+    });
 };
 
 const deleteBlogById = async (id) => {
-    return await axios.delete(`blog/delete-blog-by-id?id=${id}`);
+    return await axios.delete(`blog/delete-blog-by-id?id=${id}`, {
+        headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
+    });
 };
 
 export default {
