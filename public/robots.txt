@@ -1,8 +1,4 @@
 User-agent: *
-Allow: /about
-Allow: /project
-Allow: /project/website-project
-Allow: /project/mobile-project
-Allow: /blog
+Allow: /
 
 
