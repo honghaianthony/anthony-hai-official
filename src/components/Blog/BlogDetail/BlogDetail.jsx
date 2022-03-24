@@ -27,10 +27,6 @@ function BlogDetail() {
                                 name="description"
                                 content={data.description}
                             />
-                            <link
-                                rel="Hong Hai Official"
-                                href="https://www.anthonyhai.tk/"
-                            />
                             <meta name="Title" value={data.title} />
                             <link
                                 rel="canonical"

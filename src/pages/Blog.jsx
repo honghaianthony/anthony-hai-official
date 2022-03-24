@@ -9,7 +9,7 @@ function Blog() {
                 <title>Blog - Hong Hai Official</title>
                 <meta name="description" content="Hong Hai Official blog" />
                 <meta name="Title" value="Hong Hai Official Blog" />
-                <link rel="canonical" href="https://www.anthonyhai.tk/" />
+                <link rel="canonical" href="https://www.anthonyhai.tk/blog" />
                 <meta property="og:title" content="Hong Hai Official Blog" />
             </Helmet>
             <MainLayout>

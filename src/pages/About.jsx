@@ -11,12 +11,8 @@ function About() {
                     name="description"
                     content="The portfolio information of Hong Hai"
                 />
-                <link
-                    rel="Hong Hai Official"
-                    href="https://www.anthonyhai.tk/"
-                />
                 <meta name="Title" value="About" />
-                <link rel="canonical" href="https://www.anthonyhai.tk/" />
+                <link rel="canonical" href="https://www.anthonyhai.tk/about" />
                 <meta property="og:title" content="About" />
             </Helmet>
             <MainLayout>

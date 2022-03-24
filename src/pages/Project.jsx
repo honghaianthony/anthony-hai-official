@@ -9,7 +9,10 @@ function Project() {
                 <title>Project - Hong Hai Official</title>
                 <meta name="description" content="Hong Hai Official Project" />
                 <meta name="Title" value="Hong Hai Official Project" />
-                <link rel="canonical" href="https://www.anthonyhai.tk/" />
+                <link
+                    rel="canonical"
+                    href="https://www.anthonyhai.tk/project"
+                />
                 <meta property="og:title" content="Hong Hai Official Project" />
             </Helmet>
             <MainLayout>

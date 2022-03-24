@@ -12,7 +12,10 @@ function WebsiteProject() {
                     content="Website Project of Hong Hai"
                 />
                 <meta name="Title" value="Hong Hai Official" />
-                <link rel="canonical" href="https://www.anthonyhai.tk/" />
+                <link
+                    rel="canonical"
+                    href="https://www.anthonyhai.tk/website-project"
+                />
                 <meta property="og:title" content="Hong Hai Official" />
             </Helmet>
             <MainLayout>
