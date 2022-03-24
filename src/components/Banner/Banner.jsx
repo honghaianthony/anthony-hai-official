@@ -52,18 +52,7 @@ function Banner() {
                                     className="social-link-img"
                                 />
                             </a>
-                            <a
-                                href="https://twitter.com/anthonyhaidang"
-                                className="social-links-detail"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                <img
-                                    src={`https://firebasestorage.googleapis.com/v0/b/anthonyhai.appspot.com/o/twi-icon.png?alt=media&token=c12e4ea2-0878-451a-9fdc-cb3d645c0347`}
-                                    alt="Twitter"
-                                    className="social-link-img"
-                                />
-                            </a>
+
                             <a
                                 href="https://github.com/honghaianthony"
                                 className="social-links-detail"
