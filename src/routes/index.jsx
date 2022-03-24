@@ -77,6 +77,7 @@ export default function App() {
                         component={UpdateProject}
                     ></PrivateRoute>
                     <Route exact path="/login" component={Login}></Route>
+                    <Route exact path="*" component={NotFound} />
                 </Switch>
             </ScrollToTop>
             <ToastContainer
