@@ -52,7 +52,6 @@ function Banner() {
                                     className="social-link-img"
                                 />
                             </a>
-
                             <a
                                 href="https://github.com/honghaianthony"
                                 className="social-links-detail"
@@ -67,7 +66,7 @@ function Banner() {
                             </a>
                             <a
                                 onClick={(event) => sendMail(event)}
-                                href="mailto:namsaoquan@gmail.com"
+                                href="mailto:anthonyhaidev@gmail.com"
                                 className="social-links-detail"
                                 target="_blank"
                                 rel="noreferrer"
