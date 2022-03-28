@@ -1,32 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>https://www.anthonyhai.tk/</loc>
-    </url>
-    <url>
-        <loc>https://www.anthonyhai.tk/about</loc>
-    </url>
-    <url>
-        <loc>https://www.anthonyhai.tk/project</loc>
-    </url>
-    <url>
-        <loc>https://www.anthonyhai.tk/blog</loc>
-    </url>
-    <url>
-        <loc>https://www.anthonyhai.tk/project/website-project</loc>
-    </url>
-    <url>
-        <loc>https://www.anthonyhai.tk/project/mobile-project</loc>
-    </url>
-    
-          <url>
-              <loc>https://www.anthonyhai.tk/blog/the-beautiful-moment-of-my-12th-grade.622d7299466cfa92b3cc3dd2.html</loc>
-          </url>
-        
-          <url>
-              <loc>https://www.anthonyhai.tk/blog/dce-online-free-course-learning.622d7eaf466cfa92b3cc3e29.html</loc>
-          </url>
-        
-         
-        
+   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+<loc>https://anthonyhai.tk/</loc>
+<lastmod>2022-03-24T03:39:27+00:00</lastmod>
+<priority>1.00</priority>
+</url>
+<url>
+<loc>https://anthonyhai.tk/about</loc>
+<lastmod>2022-03-24T03:39:27+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://anthonyhai.tk/project</loc>
+<lastmod>2022-03-24T03:39:27+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://anthonyhai.tk/project/website-project</loc>
+<lastmod>2022-03-24T03:39:27+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://anthonyhai.tk/project/mobile-project</loc>
+<lastmod>2022-03-24T03:39:27+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://anthonyhai.tk/blog</loc>
+<lastmod>2022-03-24T03:39:27+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://anthonyhai.tk/blog/the-beautiful-moment-of-my-12th-grade.622d7299466cfa92b3cc3dd2.html</loc>
+<lastmod>2022-03-24T03:39:27+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://anthonyhai.tk/blog/dce-online-free-course-learning.622d7eaf466cfa92b3cc3e29.html</loc>
+<lastmod>2022-03-24T03:39:27+00:00</lastmod>
+<priority>0.64</priority>
+</url>
 </urlset>
