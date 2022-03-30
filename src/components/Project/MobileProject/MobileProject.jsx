@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./MobileProject.scss";
 import { Link } from "react-router-dom";
 import projectApis from "../../../apis/projectApis";
-import { useSpring, animated } from "react-spring";
+
 function MobileProject() {
     const [data, setData] = useState([]);
     const typeProject = "Mobile";
@@ -13,14 +13,14 @@ function MobileProject() {
         }
         asyncProject();
     }, []);
-    const props = useSpring({
-        opacity: 1,
-        transform: "translate(0px, 0px)",
-        from: { opacity: 0, transform: "translate(-200px, -100px)" },
-        config: { tension: 220, friction: 120 },
-    });
+    // const props = useSpring({
+    //     opacity: 1,
+    //     transform: "translate(0px, 0px)",
+    //     from: { opacity: 0, transform: "translate(-200px, -100px)" },
+    //     config: { tension: 220, friction: 120 },
+    // });
     return (
-        <animated.div className="mobile-project-container" style={props}>
+        <div className="mobile-project-container">
             <div className="mobile-project-title-container">
                 <div className="mobile-project-title">
                     <h4>Mobile Project</h4>
@@ -107,7 +107,7 @@ function MobileProject() {
                         </div>
                     );
                 })}
-        </animated.div>
+        </div>
     );
 }
 

@@ -1,19 +1,19 @@
 import React from "react";
 import "./Intro.scss";
-import { useSpring, animated } from "react-spring";
+
 function Intro() {
-    const props = useSpring({
-        opacity: 1,
-        transform: "translate(0px, 0px)",
-        from: { opacity: 0, transform: "translate(-20px, -20px)" },
-    });
+    // const props = useSpring({
+    //     opacity: 1,
+    //     transform: "translate(0px, 0px)",
+    //     from: { opacity: 0, transform: "translate(-20px, -20px)" },
+    // });
 
     const myStyle = {
         wordBreak: "break-all",
     };
 
     return (
-        <animated.div className="intro-container" style={props}>
+        <div className="intro-container">
             <div className="border-intro">
                 <div className="intro-title">
                     <h2>
@@ -222,7 +222,7 @@ function Intro() {
                     </div>
                 </div>
             </div>
-        </animated.div>
+        </div>
     );
 }
 
