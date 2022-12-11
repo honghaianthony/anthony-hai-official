@@ -1,13 +1,13 @@
-import axios from "axios";
+import axios from 'axios';
 
 const axiosInstance = axios.create({
-    baseURL: "https://arcane-ocean-27301.herokuapp.com/api",
-    // baseURL: "http://localhost:3301/api",
+	baseURL: 'https://anthony-hai-back-end-official.vercel.app/api',
+	// baseURL: "http://localhost:3301/api",
 });
 
 axiosInstance.defaults.headers.common[
-    "Authorization"
-] = `Bearer ${localStorage.getItem("token")}`;
+	'Authorization'
+] = `Bearer ${localStorage.getItem('token')}`;
 
 // axiosInstance.interceptors.request.use(function (config) {
 //     return config;
@@ -16,12 +16,12 @@ axiosInstance.defaults.headers.common[
 //   });
 
 axiosInstance.interceptors.response.use(
-    function (response) {
-        return response.data;
-    },
-    function (error) {
-        return Promise.reject(error);
-    }
+	function (response) {
+		return response.data;
+	},
+	function (error) {
+		return Promise.reject(error);
+	}
 );
 
 export default axiosInstance;
