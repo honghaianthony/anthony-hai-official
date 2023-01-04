@@ -181,6 +181,33 @@ function Footer() {
 									Vivi Handmade
 								</a>
 							</div>
+							<div className="footer-page-detail-page">
+								<a
+									href="https://pet-care-hazel.vercel.app/"
+									target="_blank"
+									rel="noreferrer"
+								>
+									PetCare
+								</a>
+							</div>
+							<div className="footer-page-detail-page">
+								<a
+									href="https://hoang-hoa-tham-school.vercel.app/"
+									target="_blank"
+									rel="noreferrer"
+								>
+									Hoang Hoa Tham School
+								</a>
+							</div>
+							<div className="footer-page-detail-page">
+								<a
+									href="https://hoang-hoa-tham-school.vercel.app/"
+									target="_blank"
+									rel="noreferrer"
+								>
+									Dinh Doc Lap
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>

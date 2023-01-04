@@ -13,6 +13,9 @@ import ReviewMovie from '../../assets/images/reviewmovie470.png';
 import ViviHandmade from '../../assets/images/vivihandmade.png';
 import MoneyPlus from '../../assets/images/moneyplus.png';
 import SellPhone from '../../assets/images/sellphone.png';
+import PetCare from '../../assets/images/petcare.png';
+import DinhDocLap from '../../assets/images/DinhDocLap.png';
+import HoangHoaTham from '../../assets/images/hoanghoatham.png';
 function Intro() {
 	const stagger = {
 		initial: {
@@ -219,14 +222,43 @@ function Intro() {
 								<img src={SellPhone} alt="SellPhone" />
 								<p className="sub-name-project">SellPhone</p>
 							</div>
-							<img
-								src={MoneyPlus}
-								alt="Clone Money Plus"
-								className="money-plus-img"
-							/>
-							<p className="text-center sub-name-project">
-								Clone App Money Plus
-							</p>
+							<div className="col-md-6 text-center">
+								<img src={PetCare} alt="PetCare" />
+								<p className="sub-name-project">
+									PetCare:{' '}
+									<a href="https://pet-care-hazel.vercel.app/">
+										pet-care-hazel.vercel.app
+									</a>
+								</p>
+							</div>
+							<div className="col-md-6 text-center">
+								<img src={DinhDocLap} alt="DinhDocLap" />
+								<p className="sub-name-project">
+									DinhDocLap:{' '}
+									<a href="https://ie-402-dinh-doc-lap.vercel.app/home">
+										ie-402-dinh-doc-lap.vercel.app
+									</a>
+								</p>
+							</div>
+							<div className="col-md-6 text-center">
+								<img src={HoangHoaTham} alt="HoangHoaTham" />
+								<p className="sub-name-project">
+									Hoang Hoa Tham School:{' '}
+									<a href="https://hoang-hoa-tham-school.vercel.app/">
+										hoang-hoa-tham-school.vercel.app/
+									</a>
+								</p>
+							</div>
+							<div className="col-md-6 text-center">
+								<img
+									src={MoneyPlus}
+									alt="Clone Money Plus"
+									className="money-plus-img"
+								/>
+								<p className="text-center sub-name-project">
+									Clone App Money Plus
+								</p>
+							</div>
 
 							<p>
 								I have these projects on Project tab, you can
