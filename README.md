@@ -1,36 +1,38 @@
-## Available Scripts
+# [REACTJS] Anthony Hai Official - My portfolio website
 
-In the project directory, you can run:
+## Introduction
+
+Hello everybody, I'm Hai and this is my portfolio website, the place you can know everything about me and my works:
+
+<p align="center">
+    <img src="demo/home.png" width="800"/>
+</p>
+
+## Motivation
+
+My team has decided to implement this project because of the enjoyment of pets. On the other hand, the project is a place where I can learn more about ReactJS Framework. We have made it with Redux, NextUI and other libraries for several months to make it possible to use. As you could see, with minimal setup and simple network's initialization, as long as you can run the application.
+
+## Installation
+
+First time you see this repository, you must clone it and then run the following command:
+
+### `npm install`
+
+Moreover, you should have a backend which is running with ExpressJS and NodeJS. If you don't have, you can clone it from another repository in my github, it is `petcare-be`.
+You should also have your database to run successfully.
+
+Next, you will create an .env file in your repository. The environment will be the Google Client Id of your application.
+
+After all the configuration, you can run the following command:
 
 ### `npm start`
 
-Runs the app in the development mode.\
+And... That's all what you need.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Requirements
 
-### `npm test`
+-   **nodejs >=14**
 
-Launches the test runner in the interactive watch mode.\
+## Thank you
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-My portfolio website - Hong Hai Official
+Thank you for the excellent contributions of my team to implement this project. I appreciate you if you have any questions and some comments for us to improve this project.
