@@ -1,8 +1,8 @@
 import axios from 'axios';
 
 const axiosInstance = axios.create({
-	baseURL: 'https://anthony-hai-back-end-official.vercel.app/api',
-	// baseURL: "http://localhost:3301/api",
+	// baseURL: 'https://anthony-hai-back-end-official.vercel.app/api',
+	baseURL: 'http://localhost:3301/api',
 });
 
 axiosInstance.defaults.headers.common[
