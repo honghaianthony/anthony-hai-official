@@ -1,10 +1,19 @@
 version: '3.8'
 services:
-    nginx:
+    backend:
         build:
-            context: .
+            context: ../anthonyhai-be-official
+            dockerfile: Dockerfile
+        restart: unless-stopped
         ports:
-            - 3000:80
+            - 3301:3301
+        expose:
+            - 3301
+
+    nginx:
+        image: nginx:1.23.3
+        ports:
+            - 80:80
         volumes:
             - ./build:/usr/share/nginx/html
             - ./default.conf:/etc/nginx/conf.d/default.conf
