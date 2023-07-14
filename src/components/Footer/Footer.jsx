@@ -201,7 +201,7 @@ function Footer() {
 							</div>
 							<div className="footer-page-detail-page">
 								<a
-									href="https://hoang-hoa-tham-school.vercel.app/"
+									href="https://ie-402-dinh-doc-lap.vercel.app/home"
 									target="_blank"
 									rel="noreferrer"
 								>
