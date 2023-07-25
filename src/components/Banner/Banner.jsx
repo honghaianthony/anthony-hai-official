@@ -59,7 +59,7 @@ function Banner() {
 								rel="noreferrer"
 							>
 								<img
-									src="/public/twitter.3.ico"
+									src="https://firebasestorage.googleapis.com/v0/b/anthonyhai.appspot.com/o/twitter.3.ico?alt=media&token=40b94679-8651-4141-9108-7b11bc6f921d"
 									alt="Twitter"
 									className="social-link-img"
 								/>
