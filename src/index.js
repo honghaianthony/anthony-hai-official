@@ -6,6 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import "./assets/boxicons-2.0.7/css/boxicons.min.css";
 import AuthProvider from "./store/Provider";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import "@fontsource/be-vietnam-pro";
 
 ReactDOM.hydrate(
     <HelmetProvider>
