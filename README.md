@@ -1,4 +1,4 @@
-# [REACTJS] Anthony Hai Official - My portfolio website
+# Anthony Hai Official - My portfolio website
 
 ## Introduction
 
@@ -14,4 +14,8 @@ I made this when I was a college student. I want to share everything about me an
 
 ## Thank you
 
-In my project, I used some images with my friends. I am appreciated if you allow me to use them.
+In my project, I used some images with my friends. I am appreciated if you allow me to use them. 
+
+## Announcement
+
+The next version of my portfolio will be available soon!
