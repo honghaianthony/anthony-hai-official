@@ -18,4 +18,9 @@ In my project, I used some images with my friends. I am appreciated if you allow
 
 ## Announcement
 
-The next version of my portfolio will be available soon!
+The next version of my portfolio will be available soon! This is my new website logo. You can check it out!
+
+<p align="center">
+    <img src="demo/Brand Light.png" width="1024"/>
+</p>
+
